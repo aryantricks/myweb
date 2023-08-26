@@ -1,0 +1,29 @@
+.preview{
+    padding-right: 50px;
+    height: 100%;
+    max-width: 800px;
+    background-color:rgba(0, 0, 0, 0.1);
+    border: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.copycode{
+    border-radius: 5px;
+    border: 1px;
+}
+
+.copycode:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+
+pre{
+    overflow-x: auto;
+}
+
+p , li , ul{
+    text-align: left;
+}

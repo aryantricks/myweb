@@ -1,0 +1,62 @@
+.logo_container{
+    display: flex;
+    align-items: center;
+}
+
+.logo_txt{
+    display: flex;
+    align-items: center;
+}
+
+.my_logo{
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.menucontainer {
+    position: sticky;
+    top: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.menu {
+    display: inline-block;
+    padding: 10px;
+    position: static;
+}
+
+.text {
+    text-decoration: none;
+    color: black;
+}
+
+#landedpage{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 0;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+    .menucontainer {
+        text-align: center;
+    }
+}
+
+
+.menu:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: white;
+
+}
+
+
+
+
+.menu:hover .text {
+    color: white;
+}
