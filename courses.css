@@ -1,15 +1,15 @@
-.coursemaincontainer{
+.coursemaincontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 800px;
-
+    overflow-x: hidden;
 }
 
 .card-link {
     text-decoration: none;
     color: inherit;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .card {
@@ -19,7 +19,16 @@
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     border-radius: 20px;
+    margin: 10px; /* Add some spacing between cards */
 }
+
+@media (max-width: 600px) { /* Adjust this breakpoint as needed */
+    .coursemaincontainer {
+        flex-direction: column; /* Arrange cards vertically */
+        align-items: flex-start; /* Align cards to the left */
+    }
+}
+
 
 .card:hover {
     transform: scale(1.05);

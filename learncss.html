@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="learncss.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<header>
+  <div class="logo_container">
+     <img src="img/my_logo.jpg" class="my_logo" alt="">
+     <h1 class="logo_txt">aryantricks</h1>
+  </div>
+</header>
+
+<body>
+
+  <div class="menucontainer">
+
+    <div class="menu">
+       <a href="index.html" class="text">HOME</a>
+    </div>
+
+    <div class="menu" id="landedpage">
+       <a href="courses.html" class="text">COURSES</a>
+    </div>
+
+    <div class="menu">
+       <a href="" class="text">ABOUT</a>
+    </div>
+
+    <div class="menu">
+       <a href="" class="text">CONTACT</a>
+    </div>
+
+    <div class="menu">
+       <a href="" class="text">SUPPORT</a>
+    </div>
+
+    <div class="menu">
+       <a href="" class="text">CHAT</a>
+    </div>
+ </div>
+
+
+
+  <div>
+
+
+    <div>
+      <p><strong>Introduction to CSS:</strong></p>
+      <p><strong>What is CSS?</strong>
+          CSS, which stands for Cascading Style Sheets, is a style sheet language used for describing the
+          presentation and
+          formatting of HTML and XML documents. It controls how elements on a web page should be displayed, such
+          as their
+          colors, fonts, spacing, positioning, and more. CSS enables web designers and developers to separate the
+          content
+          (HTML) of a webpage from its visual presentation, making it easier to maintain and update the design
+          across
+          multiple pages.</p>
+      <p><strong>Why is CSS important?</strong>
+          CSS plays a vital role in web development for several reasons:</p>
+      <ol>
+          <li>
+              <p><strong>Separation of Concerns:</strong> By separating content (structure) from presentation, CSS
+                  allows
+                  developers to update the visual aspects of a website without altering the underlying content.
+                  This
+                  separation enhances maintainability and reusability.</p>
+          </li>
+          <li>
+              <p><strong>Consistency:</strong> CSS ensures consistent styling across an entire website. Changes
+                  made to a
+                  single CSS file can be applied throughout the site, maintaining a cohesive design.</p>
+          </li>
+          <li>
+              <p><strong>Flexibility:</strong> With CSS, designers and developers have granular control over how
+                  elements
+                  are displayed. This allows for creativity and customization without compromising the underlying
+                  structure.</p>
+          </li>
+          <li>
+              <p><strong>Responsive Design:</strong> CSS enables responsive design by allowing adjustments to
+                  layouts,
+                  fonts, and other styles based on the device's screen size, ensuring a consistent user experience
+                  across
+                  different devices.</p>
+          </li>
+          <li>
+              <p><strong>Performance:</strong> CSS helps optimize page loading times. By controlling the styling
+                  separately, it reduces the need for repetitive styling code within HTML documents.</p>
+          </li>
+      </ol>
+      <p><strong>CSS Syntax and Structure:</strong>
+          CSS rules consist of selectors and declarations. A selector targets the HTML elements to style, and the
+          declarations specify how those elements should be styled. Declarations are enclosed within curly braces
+          <code class="copycode">{}</code> and consist of property-value pairs.
+      </p>
+      <p>Example:</p>
+      <pre class="preview"><div ><div ><span>css</span><button class="copycode"><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Selector: Targets all &lt;h1&gt; elements */</span>
+      <span >h1</span> {
+        <span >/* Declaration: Sets font size and color */</span>
+        <span >font-size</span>: <span >24px</span>;
+        <span >color</span>: <span >#333</span>;
+      }
+      </code></div></div></pre>
+      <p><strong>Inline, Internal, and External CSS:</strong></p>
+      <ol>
+          <li><strong>Inline CSS:</strong> Inline styles are applied directly to HTML elements using the
+              <code class="copycode">style</code> attribute. While this approach provides quick styling for individual elements,
+              it's less
+              maintainable and can lead to code repetition.
+          </li>
+      </ol>
+      <p>Example:</p>
+      <pre class="preview"><div ><div ><span>html</span><button class="copycode"><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >p</span> <span >style</span>=<span >"color: blue;"</span>&gt;</span>This is a blue paragraph.<span >&lt;/<span >p</span>&gt;</span>
+      </code></div></div></pre>
+      <ol start="2">
+          <li><strong>Internal CSS:</strong> Internal styles are defined within the <code class="copycode">&lt;style&gt;</code>
+              element in
+              the <code class="copycode">&lt;head&gt;</code> section of an HTML document. They affect the styling of the entire
+              document
+              and are useful for small-scale projects.</li>
+      </ol>
+      <p>Example:</p>
+      <pre class="preview"><div ><div ><span>html</span><button class="copycode"><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!DOCTYPE <span >html</span>&gt;</span>
+      <span >&lt;<span >html</span>&gt;</span>
+      <span >&lt;<span >head</span>&gt;</span>
+        <span >&lt;<span >style</span>&gt;</span><span >
+          <span >p</span> {
+            <span >font-size</span>: <span >18px</span>;
+          }
+        </span><span >&lt;/<span >style</span>&gt;</span>
+      <span >&lt;/<span >head</span>&gt;</span>
+      <span >&lt;<span >body</span>&gt;</span>
+        <span >&lt;<span >p</span>&gt;</span>This paragraph has an 18px font size.<span >&lt;/<span >p</span>&gt;</span>
+      <span >&lt;/<span >body</span>&gt;</span>
+      <span >&lt;/<span >html</span>&gt;</span>
+      </code></div></div></pre>
+      <ol start="3">
+          <li><strong>External CSS:</strong> External styles are defined in separate CSS files and linked to HTML
+              documents using the <code class="copycode">&lt;link&gt;</code> element. This approach promotes reusability and keeps
+              the HTML
+              clean.</li>
+      </ol>
+      <p>Example (styles.css):</p>
+      <pre class="preview"><div ><div ><span>css</span><button class="copycode"><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* styles.css */</span>
+      <span >p</span> {
+        <span >font-family</span>: Arial, sans-serif;
+        <span >line-height</span>: <span >1.5</span>;
+      }
+      </code></div></div></pre>
+      <pre class="preview"><div ><div ><span>html</span><button class="copycode"><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!DOCTYPE <span >html</span>&gt;</span>
+      <span >&lt;<span >html</span>&gt;</span>
+      <span >&lt;<span >head</span>&gt;</span>
+        <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"styles.css"</span>&gt;</span>
+      <span >&lt;/<span >head</span>&gt;</span>
+      <span >&lt;<span >body</span>&gt;</span>
+        <span >&lt;<span >p</span>&gt;</span>This paragraph uses external CSS styles.<span >&lt;/<span >p</span>&gt;</span>
+      <span >&lt;/<span >body</span>&gt;</span>
+      <span >&lt;/<span >html</span>&gt;</span>
+      </code></div></div></pre>
+      <p>Choosing between these approaches depends on the project's size, maintainability, and requirements.</p>
+      <p>In summary, CSS is a fundamental technology for web development, providing control over the visual
+          aspects of web
+          pages. It separates design from content, ensuring consistency, flexibility, and maintainability in
+          modern web
+          applications.</p>
+  </div>
+
+  <div >
+    <p><strong>2. Basic Selectors and Properties:</strong></p>
+    <p><strong>Element Selectors:</strong>
+                    Element selectors target specific HTML elements for styling. They are written using the element's tag
+                    name.</p>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Targets all &lt;p&gt; elements */</span>
+                <span >p</span> {
+                  <span >color</span>: blue;
+                }
+                </code></div></div></pre>
+    <p><strong>Class Selectors:</strong>
+                    Class selectors target elements with a specific class attribute. They are written using a period (.)
+                    followed by
+                    the class name.</p>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Targets elements with the class "highlight" */</span>
+                <span >.highlight</span> {
+                  <span >background-color</span>: yellow;
+                }
+                </code></div></div></pre>
+    <p><strong>ID Selectors:</strong>
+                    ID selectors target a single element with a specific ID attribute. They are written using a hash (#)
+                    followed by
+                    the ID name.</p>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Targets the element with the ID "header" */</span>
+                <span >#header</span> {
+                  <span >font-size</span>: <span >24px</span>;
+                }
+                </code></div></div></pre>
+    <p><strong>Combining Selectors:</strong>
+                    Selectors can be combined to target specific elements with certain attributes. For example, you can
+                    target
+                    elements with a specific class inside a specific container.</p>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Targets &lt;p&gt; elements with class "important" inside &lt;div&gt; elements */</span>
+                <span >div</span> <span >p</span><span >.important</span> {
+                  <span >font-weight</span>: bold;
+                }
+                </code></div></div></pre>
+    <p><strong>CSS Properties:</strong>
+                    CSS properties are used to define the visual styling of HTML elements. Here are some commonly used
+                    properties:
+                </p>
+    <ul>
+    <li><strong>Color Properties:</strong>
+    <ul>
+    <li><code class="copycode">color</code>: Sets the text color.</li>
+    <li><code class="copycode">background-color</code>: Sets the background color.</li>
+    </ul>
+    </li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Sets text color to red and background color to light gray */</span>
+                <span >h1</span> {
+                  <span >color</span>: red;
+                  <span >background-color</span>: lightgray;
+                }
+                </code></div></div></pre>
+    <ul>
+    <li><strong>Font Properties:</strong>
+    <ul>
+    <li><code class="copycode">font-family</code>: Specifies the font family.</li>
+    <li><code class="copycode">font-size</code>: Sets the font size.</li>
+    <li><code class="copycode">font-weight</code>: Defines the font weight (e.g., bold, normal).</li>
+    </ul>
+    </li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Applies Arial font, 18px size, and bold weight to &lt;p&gt; elements */</span>
+                <span >p</span> {
+                  <span >font-family</span>: Arial, sans-serif;
+                  <span >font-size</span>: <span >18px</span>;
+                  <span >font-weight</span>: bold;
+                }
+                </code></div></div></pre>
+    <ul>
+    <li><strong>Text Properties:</strong>
+    <ul>
+    <li><code class="copycode">text-align</code>: Aligns the text within an element (left, center, right, justify).
+                            </li>
+    <li><code class="copycode">text-decoration</code>: Adds decorations to text (underline, line-through, etc.).</li>
+    <li><code class="copycode">line-height</code>: Sets the spacing between lines of text.</li>
+    </ul>
+    </li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Centers the text, adds underline, and adjusts line height for &lt;a&gt; elements */</span>
+                <span >a</span> {
+                  <span >text-align</span>: center;
+                  <span >text-decoration</span>: underline;
+                  <span >line-height</span>: <span >1.5</span>;
+                }
+                </code></div></div></pre>
+    <ul>
+    <li><strong>Background Properties:</strong>
+    <ul>
+    <li><code class="copycode">background-image</code>: Sets the background image.</li>
+    <li><code class="copycode">background-repeat</code>: Defines how the background image should repeat.</li>
+    <li><code class="copycode">background-position</code>: Specifies the position of the background image.</li>
+    </ul>
+    </li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Sets a background image, prevents repetition, and positions it at the top */</span>
+                <span >body</span> {
+                  <span >background-image</span>: <span >url</span>(<span >'background.jpg'</span>);
+                  <span >background-repeat</span>: no-repeat;
+                  <span >background-position</span>: top;
+                }
+                </code></div></div></pre>
+    <p>These are just a few examples of CSS properties and selectors. CSS offers a wide range of properties for
+                    customizing the appearance of HTML elements, allowing you to create visually appealing and engaging web
+                    pages.
+                </p>
+    </div>
+    <div >
+    <p><strong>3.Box Model:</strong></p>
+    <p>The box model is a fundamental concept in CSS that describes how elements on a web page are visually
+                    represented
+                    as rectangular boxes. Each box is comprised of several layers, including content, padding, borders, and
+                    margins.
+                </p>
+    <p><strong>Understanding the Box Model:</strong>
+                    The box model consists of the following components:</p>
+    <ol>
+    <li>
+    <p><strong>Content:</strong> This is the innermost part of the box, containing the actual content of
+                            the
+                            element, such as text, images, or other HTML elements.</p>
+    </li>
+    <li>
+    <p><strong>Padding:</strong> The padding is a transparent area surrounding the content. It provides
+                            space
+                            between the content and the border. Padding can be set using properties like
+                            <code class="copycode">padding-top</code>,
+                            <code class="copycode">padding-right</code>, <code class="copycode">padding-bottom</code>, and <code class="copycode">padding-left</code>.
+                        </p>
+    </li>
+    <li>
+    <p><strong>Border:</strong> The border surrounds the padding and content. It can have different
+                            styles,
+                            colors, and widths. Borders are set using properties like <code class="copycode">border-width</code>,
+                            <code class="copycode">border-style</code>, and <code class="copycode">border-color</code>.
+                        </p>
+    </li>
+    <li>
+    <p><strong>Margin:</strong> The margin is the outermost area of the box, creating space between
+                            adjacent
+                            elements. Margins are set using properties like <code class="copycode">margin-top</code>,
+                            <code class="copycode">margin-right</code>,
+                            <code class="copycode">margin-bottom</code>, and <code class="copycode">margin-left</code>.
+                        </p>
+    </li>
+    </ol>
+    <p><strong>Margins, Borders, Padding, and Content:</strong>
+                    Consider the following example where we define margins, borders, padding, and content for a box:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.box</span> {
+                      <span >width</span>: <span >200px</span>;
+                      <span >height</span>: <span >150px</span>;
+                      <span >margin</span>: <span >20px</span>;
+                      <span >border</span>: <span >2px</span> solid black;
+                      <span >padding</span>: <span >10px</span>;
+                    }
+                    </code></div></div></pre>
+    <p>In this example, the total width and height of the box will be calculated as follows:</p>
+    <ul>
+    <li>Width: 200px (content) + 2 * 10px (padding) + 2 * 2px (border) + 2 * 20px (margin) = 264px</li>
+    <li>Height: 150px (content) + 2 * 10px (padding) + 2 * 2px (border) + 2 * 20px (margin) = 234px</li>
+    </ul>
+    <p><strong>Box Sizing:</strong>
+                    The <code class="copycode">box-sizing</code> property controls how the total width and height of an element are
+                    calculated. There
+                    are two main values:</p>
+    <ol>
+    <li>
+    <p><code class="copycode">content-box</code> (default): This value includes only the content's dimensions in the
+                            width and
+                            height calculations. Padding, borders, and margins are added to the specified width and height.
+                        </p>
+    </li>
+    <li>
+    <p><code class="copycode">border-box</code>: This value includes padding and borders in the width and height
+                            calculations.
+                            The specified width and height values represent the entire box, including content, padding,
+                            borders, and
+                            margins.</p>
+    </li>
+    </ol>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example of using box-sizing */</span>
+                    <span >.element</span> {
+                      <span >box-sizing</span>: border-box;
+                      <span >width</span>: <span >200px</span>;
+                      <span >padding</span>: <span >10px</span>;
+                      <span >border</span>: <span >2px</span> solid black;
+                    }
+                    </code></div></div></pre>
+    <p><strong>Margin Collapsing:</strong>
+                    Margin collapsing is a behavior where adjacent margins of elements collapse into a single margin. This
+                    typically
+                    happens when two vertical margins of block-level elements are adjacent to each other.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >div</span> <span >class</span>=<span >"margin-example"</span>&gt;</span>
+                      <span >&lt;<span >p</span>&gt;</span>Paragraph 1<span >&lt;/<span >p</span>&gt;</span>
+                      <span >&lt;<span >p</span>&gt;</span>Paragraph 2<span >&lt;/<span >p</span>&gt;</span>
+                    <span >&lt;/<span >div</span>&gt;</span>
+                    </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Margin collapsing example */</span>
+                    <span >p</span> {
+                      <span >margin</span>: <span >20px</span> <span >0</span>;
+                    }
+                    </code></div></div></pre>
+    <p>In this example, the margin between "Paragraph 1" and "Paragraph 2" will collapse to the larger of the
+                    two
+                    margins (20px), creating a vertical gap between the paragraphs.</p>
+    <p>Understanding the box model and its components, along with properties like <code class="copycode">box-sizing</code> and
+                    margin
+                    collapsing, is crucial for accurate layout and spacing control in CSS.</p>
+    </div>
+    <div >
+    <p><strong>4.Layout and Positioning:</strong></p>
+    <p><strong>Display Properties:</strong>
+                    The <code class="copycode">display</code> property plays a crucial role in determining how elements flow within the
+                    layout. Let's
+                    explore some common values:</p>
+    <ul>
+    <li><code class="copycode">block</code>: Elements with <code class="copycode">display: block</code> take up the full width available and
+                        stack
+                        vertically. Examples include <code class="copycode">&lt;div&gt;</code>, <code class="copycode">&lt;p&gt;</code>, and
+                        <code class="copycode">&lt;h1&gt;</code>
+                        elements.
+                    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.block-example</span> {
+                          <span >display</span>: block;
+                          <span >width</span>: <span >100%</span>;
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">inline</code>: Elements with <code class="copycode">display: inline</code> only take up as much width as
+                        necessary and
+                        stack horizontally. Examples include <code class="copycode">&lt;span&gt;</code> and <code class="copycode">&lt;a&gt;</code> elements.
+                    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.inline-example</span> {
+                          <span >display</span>: inline;
+                          <span >margin-right</span>: <span >10px</span>;
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">inline-block</code>: Elements with <code class="copycode">display: inline-block</code> combine features of both
+                        block
+                        and inline elements. They flow horizontally like inline elements but can be styled like block
+                        elements.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.inline-block-example</span> {
+                          <span >display</span>: inline-block;
+                          <span >width</span>: <span >150px</span>;
+                          <span >height</span>: <span >100px</span>;
+                          <span >background-color</span>: lightblue;
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">flex</code>: The <code class="copycode">display: flex</code> property turns a container into a flex container,
+                        allowing
+                        flexible layouts. Flex items within the container can be aligned and distributed along the main and
+                        cross
+                        axes.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.flex-container</span> {
+                          <span >display</span>: flex;
+                          <span >justify-content</span>: space-between;
+                          <span >align-items</span>: center;
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">grid</code>: The <code class="copycode">display: grid</code> property transforms a container into a grid
+                        container.
+                        Grid items are positioned in rows and columns defined by properties like
+                        <code class="copycode">grid-template-columns</code>
+                        and <code class="copycode">grid-template-rows</code>.
+                    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.grid-container</span> {
+                          <span >display</span>: grid;
+                          <span >grid-template-columns</span>: <span >repeat</span>(<span >3</span>, <span >1</span>fr);
+                          <span >gap</span>: <span >10px</span>;
+                        }
+                        </code></div></div></pre>
+    <p><strong>Positioning:</strong></p>
+    <ul>
+    <li>
+    <p><code class="copycode">static</code>: This is the default position. Elements are placed according to the normal
+                            flow of
+                            the document.</p>
+    </li>
+    <li>
+    <p><code class="copycode">relative</code>: Elements with <code class="copycode">position: relative</code> are positioned relative to
+                            their
+                            normal position. You can adjust their position using properties like <code class="copycode">top</code>,
+                            <code class="copycode">right</code>, <code class="copycode">bottom</code>, and <code class="copycode">left</code>.
+                        </p>
+    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.relative-example</span> {
+                          <span >position</span>: relative;
+                          <span >top</span>: <span >10px</span>;
+                          <span >left</span>: <span >20px</span>;
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">absolute</code>: Elements with <code class="copycode">position: absolute</code> are removed from the normal
+                        flow and
+                        positioned relative to their nearest positioned ancestor or the containing block. Useful for
+                        creating
+                        overlays or pop-ups.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.absolute-example</span> {
+                          <span >position</span>: absolute;
+                          <span >top</span>: <span >50%</span>;
+                          <span >left</span>: <span >50%</span>;
+                          <span >transform</span>: <span >translate</span>(-<span >50%</span>, -<span >50%</span>);
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">fixed</code>: Elements with <code class="copycode">position: fixed</code> are positioned relative to the
+                        viewport. They
+                        remain in the same position even when scrolling.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.fixed-example</span> {
+                          <span >position</span>: fixed;
+                          <span >top</span>: <span >20px</span>;
+                          <span >right</span>: <span >20px</span>;
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">sticky</code>: Elements with <code class="copycode">position: sticky</code> are positioned based on the user's
+                        scroll
+                        position. They behave like <code class="copycode">relative</code> within their parent and <code class="copycode">fixed</code> relative
+                        to the
+                        viewport, providing a sticky effect.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.sticky-example</span> {
+                          <span >position</span>: sticky;
+                          <span >top</span>: <span >0</span>;
+                          <span >background-color</span>: lightgray;
+                        }
+                        </code></div></div></pre>
+    <p><strong>Floats and Clearing:</strong></p>
+    <p>Floats (<code class="copycode">float: left</code> or <code class="copycode">float: right</code>) were historically used for layout
+                    purposes, but
+                    they have some drawbacks, such as causing layout issues and interfering with other elements. The
+                    <code class="copycode">clear</code> property can be used to prevent adjacent elements from floating beside a floated
+                    element.
+                </p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.float-example</span> {
+                          <span >float</span>: left;
+                          <span >width</span>: <span >200px</span>;
+                          <span >margin-right</span>: <span >20px</span>;
+                        }
+                        
+                        <span >.clear-example</span> {
+                          <span >clear</span>: both; <span >/* Prevents adjacent elements from floating beside */</span>
+                        }
+                        
+                        <span >/* Modern layouts often use Flexbox or CSS Grid instead of floats. */</span>
+                        </code></div></div></pre>
+    <p>Understanding these advanced layout and positioning techniques, along with their appropriate use cases,
+                    empowers
+                    you to create sophisticated and responsive web designs. It's recommended to prioritize Flexbox and CSS
+                    Grid for
+                    modern layouts due to their more robust and predictable behaviors compared to older techniques like
+                    floats and
+                    positioning.</p>
+    </div>
+    <div >
+    <p><strong>Responsive Design:</strong></p>
+    <p><strong>Media Queries:</strong>
+                    Media queries allow you to apply different CSS styles based on the characteristics of the user's device,
+                    such as
+                    screen size, resolution, and orientation. This is a cornerstone of responsive design, as it enables you
+                    to adapt
+                    your layout and styling for various devices.</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example of a media query for screens with a maximum width of 768px */</span>
+                            <span >@media</span> (<span >max-width</span>: <span >768px</span>) {
+                              <span >.container</span> {
+                                <span >width</span>: <span >100%</span>;
+                                <span >padding</span>: <span >10px</span>;
+                              }
+                            }
+                            </code></div></div></pre>
+    <p><strong>Viewport Meta Tag:</strong>
+                    The viewport meta tag is essential for ensuring that your website is displayed correctly on different
+                    devices.
+                    It allows you to control the initial scale and width of the viewport, which affects how content is
+                    rendered on
+                    mobile devices.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!DOCTYPE <span >html</span>&gt;</span>
+                            <span >&lt;<span >html</span>&gt;</span>
+                            <span >&lt;<span >head</span>&gt;</span>
+                              <span >&lt;<span >meta</span> <span >name</span>=<span >"viewport"</span> <span >content</span>=<span >"width=device-width, initial-scale=1.0"</span>&gt;</span>
+                            <span >&lt;/<span >head</span>&gt;</span>
+                            <span >&lt;<span >body</span>&gt;</span>
+                              <span >&lt;!-- Your content here --&gt;</span>
+                            <span >&lt;/<span >body</span>&gt;</span>
+                            <span >&lt;/<span >html</span>&gt;</span>
+                            </code></div></div></pre>
+    <p><strong>Fluid Grids and Flexible Images:</strong>
+                    Fluid grids involve using relative units like percentages instead of fixed pixels for defining widths.
+                    This
+                    allows your layout to adapt smoothly to different screen sizes. Flexible images can be achieved by
+                    setting their
+                    maximum width to 100% to prevent them from overflowing their containers.</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example of a fluid grid layout using percentages */</span>
+                            <span >.column</span> {
+                              <span >width</span>: <span >33.33%</span>;
+                              <span >float</span>: left;
+                            }
+                            
+                            <span >/* Example of flexible images */</span>
+                            <span >img</span> {
+                              <span >max-width</span>: <span >100%</span>;
+                              <span >height</span>: auto;
+                            }
+                            </code></div></div></pre>
+    <p><strong>Mobile-First vs. Desktop-First Approaches:</strong>
+                    Responsive design can be approached from two main perspectives: mobile-first and desktop-first.</p>
+    <ul>
+    <li>
+    <p><strong>Mobile-First:</strong> Design and develop for mobile devices first, then gradually
+                            enhance the
+                            layout and styling as the screen size increases. This approach ensures a streamlined experience
+                            on small
+                            screens and avoids overloading larger screens with unnecessary styles.</p>
+    </li>
+    <li>
+    <p><strong>Desktop-First:</strong> Design and develop for desktop screens initially, and then use
+                            media
+                            queries to adapt the design for smaller screens. This approach might lead to more complex media
+                            queries
+                            and additional effort to optimize for mobile.</p>
+    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example of a mobile-first media query */</span>
+                            <span >/* Default styles for mobile devices */</span>
+                            <span >.column</span> {
+                              <span >width</span>: <span >100%</span>;
+                            }
+                            
+                            <span >/* Media query for larger screens */</span>
+                            <span >@media</span> (<span >min-width</span>: <span >768px</span>) {
+                              <span >.column</span> {
+                                <span >width</span>: <span >33.33%</span>;
+                              }
+                            }
+                            </code></div></div></pre>
+    <p>Responsive design is about creating a seamless user experience across various devices. By employing media
+                    queries, optimizing the viewport, utilizing fluid grids and flexible images, and choosing a suitable
+                    approach,
+                    you can ensure that your website looks and works well on everything from small smartphones to large
+                    desktop
+                    monitors.</p>
+    </div>
+    <div >
+    <p><strong>Typography:</strong></p>
+    <p><strong>Fonts and Web-Safe Fonts:</strong>
+                    Typography is a key aspect of web design that greatly influences readability and aesthetics. When
+                    choosing fonts, consider both the font family and its availability across different devices. Web-safe
+                    fonts are fonts that are widely available across various operating systems and browsers.</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Using a web-safe font */</span>
+                <span >body</span> {
+                  <span >font-family</span>: Arial, sans-serif;
+                }
+                </code></div></div></pre>
+    <p><strong>Google Fonts and Other Font APIs:</strong>
+                    Google Fonts and other font APIs provide an extensive collection of fonts that can be easily integrated
+                    into your web projects. They offer a wide range of font families with different styles and weights.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!-- Linking to a Google Font in the HTML &lt;head&gt; section --&gt;</span>
+                <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"https://fonts.googleapis.com/css?family=Open+Sans:400,700"</span>&gt;</span>
+                </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Applying a Google Font in CSS */</span>
+                <span >body</span> {
+                  <span >font-family</span>: <span >'Open Sans'</span>, sans-serif;
+                }
+                </code></div></div></pre>
+    <p><strong>Font Properties:</strong>
+                    Font properties allow you to control various aspects of typography, including size, weight, style, and
+                    more.</p>
+    <ul>
+    <li><code class="copycode">font-size</code>: Sets the size of the font. It can be specified in pixels, ems, rems,
+                        percentages, etc.</li>
+    <li><code class="copycode">font-weight</code>: Defines the thickness of the font. Common values include
+                        <code class="copycode">normal</code>, <code class="copycode">bold</code>, <code class="copycode">lighter</code>, and numeric values.
+                    </li>
+    <li><code class="copycode">font-style</code>: Specifies the style of the font. Values are <code class="copycode">normal</code>,
+                        <code class="copycode">italic</code>, and <code class="copycode">oblique</code>.
+                    </li>
+    <li><code class="copycode">font-family</code>: Sets the font family for text. Provide a list of fonts, as the browser
+                        will try to apply the first available one.</li>
+    <li><code class="copycode">line-height</code>: Determines the spacing between lines of text. It's often set as a unitless
+                        value or as a multiple of the font size.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Applying font properties */</span>
+                <span >h1</span> {
+                  <span >font-size</span>: <span >28px</span>;
+                  <span >font-weight</span>: bold;
+                  <span >font-style</span>: italic;
+                  <span >font-family</span>: <span >'Open Sans'</span>, sans-serif;
+                  <span >line-height</span>: <span >1.5</span>;
+                }
+                </code></div></div></pre>
+    <p><strong>Text Manipulation:</strong>
+                    Text manipulation properties allow you to control the appearance and alignment of text.</p>
+    <ul>
+    <li><code class="copycode">text-align</code>: Specifies how text is horizontally aligned within its container. Common
+                        values are <code class="copycode">left</code>, <code class="copycode">center</code>, <code class="copycode">right</code>, and <code class="copycode">justify</code>.
+                    </li>
+    <li><code class="copycode">text-transform</code>: Changes the case of text. Values include <code class="copycode">uppercase</code>,
+                        <code class="copycode">lowercase</code>, <code class="copycode">capitalize</code>, and <code class="copycode">none</code>.
+                    </li>
+    <li><code class="copycode">text-decoration</code>: Adds visual effects to text, like <code class="copycode">underline</code>,
+                        <code class="copycode">overline</code>, <code class="copycode">line-through</code>, and <code class="copycode">none</code>.
+                    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Applying text manipulation properties */</span>
+                <span >p</span> {
+                  <span >text-align</span>: center;
+                  <span >text-transform</span>: uppercase;
+                  <span >text-decoration</span>: underline;
+                }
+                </code></div></div></pre>
+    <p>Typography is crucial for creating a visually appealing and readable website. By selecting appropriate
+                    fonts, utilizing font APIs, applying font properties, and using text manipulation effectively, you can
+                    enhance the design and user experience of your web pages.</p>
+    </div>
+    <div >
+    <p><strong>Pseudo-classes and Pseudo-elements:</strong></p>
+    <p><strong>Pseudo-classes:</strong>
+                    Pseudo-classes are keywords added to selectors that define a special state of an element. They are
+                    commonly used to style interactive elements based on user interactions.</p>
+    <ul>
+    <li><code class="copycode">:hover</code>: Applies styles when a user hovers over an element with their cursor.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Changing background color on hover */</span>
+                    <span >button</span><span >:hover</span> {
+                      <span >background-color</span>: lightgray;
+                    }
+                    </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">:active</code>: Applies styles to an element when it's being clicked or activated by the user.
+                    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Changing text color when clicked */</span>
+                    <span >a</span><span >:active</span> {
+                      <span >color</span>: red;
+                    }
+                    </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">:focus</code>: Applies styles to an element when it gains focus (usually via keyboard
+                        navigation).</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Adding a border when input is focused */</span>
+                    <span >input</span><span >:focus</span> {
+                      <span >border</span>: <span >2px</span> solid blue;
+                    }
+                    </code></div></div></pre>
+    <p><strong>Pseudo-elements:</strong>
+                    Pseudo-elements are used to style a specific part of an element's content. They are denoted by the
+                    <code class="copycode">::</code> notation.
+                </p>
+    <ul>
+    <li><code class="copycode">::before</code>: Inserts content before the content of an element. It's often used to add
+                        decorative elements or icons.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Adding quotation marks before blockquote content */</span>
+                    <span >blockquote</span><span >::before</span> {
+                      <span >content</span>: <span >"\201C"</span>; <span >/* Unicode for opening double quotation mark */</span>
+                    }
+                    </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">::after</code>: Inserts content after the content of an element. Like <code class="copycode">::before</code>,
+                        it's used for decorative or stylistic additions.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Adding a decorative arrow after a link */</span>
+                    <span >a</span><span >::after</span> {
+                      <span >content</span>: <span >"\2192"</span>; <span >/* Unicode for right arrow */</span>
+                    }
+                    </code></div></div></pre>
+    <p><strong>Styling Form Elements with Pseudo-classes:</strong></p>
+    <p>Pseudo-classes are particularly useful for styling form elements, making them more visually appealing and
+                    user-friendly.</p>
+    <ul>
+    <li><code class="copycode">:checked</code>: Targets radio buttons and checkboxes that are selected.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Changing label color when radio button is selected */</span>
+                    <span >input</span><span >[type=<span >"radio"</span>]</span><span >:checked</span> + <span >label</span> {
+                      <span >color</span>: blue;
+                    }
+                    </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">:placeholder-shown</code>: Targets input elements when their placeholder text is visible.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Styling input when placeholder is shown */</span>
+                    <span >input</span><span >:placeholder-shown</span> {
+                      <span >border</span>: <span >1px</span> solid gray;
+                      <span >color</span>: gray;
+                    }
+                    </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">:valid</code> and <code class="copycode">:invalid</code>: These pseudo-classes target input elements with valid
+                        or invalid values according to their specified validation constraints (like <code class="copycode">required</code>
+                        and <code class="copycode">pattern</code> attributes).</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Styling valid and invalid email inputs */</span>
+                    <span >input</span><span >[type=<span >"email"</span>]</span><span >:valid</span> {
+                      <span >border</span>: <span >2px</span> solid green;
+                    }
+                    
+                    <span >input</span><span >[type=<span >"email"</span>]</span><span >:invalid</span> {
+                      <span >border</span>: <span >2px</span> solid red;
+                    }
+                    </code></div></div></pre>
+    <p>Using pseudo-classes and pseudo-elements, you can enhance the user experience of your web pages by adding
+                    interactive styles and creative decorative elements. These techniques allow for a higher degree of
+                    customization and can make your website more visually engaging.</p>
+    </div>
+    <div >
+    <p><strong>Transitions and Animations:</strong></p>
+    <p><strong>CSS Transitions:</strong>
+                    Transitions allow you to smoothly change property values over a specified duration, creating smooth and
+                    visually appealing effects when elements change states.</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Adding a transition to a button's background color */</span>
+                        <span >button</span> {
+                          <span >background-color</span>: blue;
+                          <span >transition</span>: background-color <span >0.3s</span> ease;
+                        }
+                        
+                        <span >button</span><span >:hover</span> {
+                          <span >background-color</span>: lightblue;
+                        }
+                        </code></div></div></pre>
+    <p>In this example, the button's background color will change gradually over 0.3 seconds with an easing
+                    function when hovered.</p>
+    <p><strong>CSS Animations:</strong>
+                    Animations provide more complex and dynamic effects by defining multiple keyframes to control the
+                    intermediate states of an element.</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example: Creating a simple animation for a spinning element */</span>
+                        <span >@keyframes</span> spin {
+                          <span >from</span> {
+                            <span >transform</span>: <span >rotate</span>(<span >0deg</span>);
+                          }
+                          <span >to</span> {
+                            <span >transform</span>: <span >rotate</span>(<span >360deg</span>);
+                          }
+                        }
+                        
+                        <span >.spinner</span> {
+                          <span >width</span>: <span >50px</span>;
+                          <span >height</span>: <span >50px</span>;
+                          <span >border</span>: <span >4px</span> solid <span >#f3f3f3</span>;
+                          <span >border-top</span>: <span >4px</span> solid <span >#3498db</span>;
+                          <span >border-radius</span>: <span >50%</span>;
+                          <span >animation</span>: spin <span >2s</span> linear infinite;
+                        }
+                        </code></div></div></pre>
+    <p>In this example, the <code class="copycode">spin</code> animation rotates the <code class="copycode">.spinner</code> element 360 degrees
+                    over 2 seconds in a linear manner.</p>
+    <p><strong>Keyframes and Animation Properties:</strong>
+                    Keyframes are used within animations to define the intermediate states an element should go through
+                    during the animation. Animation properties control how the animation behaves.</p>
+    <ul>
+    <li><code class="copycode">@keyframes</code>: Defines the animation's keyframes, specifying the styles at different
+                        points in time.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >@keyframes</span> slide {
+                          <span >0%</span> {
+                            <span >transform</span>: <span >translateX</span>(<span >0</span>);
+                          }
+                          <span >100%</span> {
+                            <span >transform</span>: <span >translateX</span>(<span >100px</span>);
+                          }
+                        }
+                        </code></div></div></pre>
+    <ul>
+    <li><code class="copycode">animation-name</code>: Specifies the name of the keyframe animation to apply.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.element</span> {
+                          <span >animation-name</span>: slide;
+                          <span >animation-duration</span>: <span >2s</span>;
+                          <span >animation-timing-function</span>: ease-in-out;
+                          <span >animation-delay</span>: <span >1s</span>;
+                          <span >animation-iteration-count</span>: infinite;
+                          <span >animation-direction</span>: alternate;
+                        }
+                        </code></div></div></pre>
+    <p>In this example, the <code class="copycode">.element</code> will slide 100px to the right over 2 seconds with an
+                    ease-in-out timing function, start after a delay of 1 second, and repeat infinitely in alternating
+                    directions.</p>
+    <p>Transitions and animations are powerful tools for adding visual interest and interactivity to your
+                    website. By smoothly transitioning between states or creating dynamic animations, you can create a more
+                    engaging and captivating user experience.</p>
+    </div>
+    <div >
+    <p><strong>CSS Preprocessors:</strong></p>
+    <p><strong>Introduction to Preprocessors:</strong>
+                    CSS preprocessors are scripting languages that extend the capabilities of regular CSS. They allow you to
+                    use variables, functions, nesting, and more to write cleaner and more maintainable stylesheets. Two
+                    popular preprocessors are Sass (Syntactically Awesome Style Sheets) and Less.</p>
+    <p><strong>Variables, Nesting, Mixins:</strong></p>
+    <ul>
+    <li><strong>Variables:</strong> Preprocessors allow you to define variables for reuse throughout your
+                        stylesheet, making it easier to maintain consistent styling.</li>
+    </ul>
+    <p>Sass Example:</p>
+    <pre class="preview"><div ><div ><span>scss</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >$primary-color</span>: <span >#3498db</span>;
+                
+                <span >.button</span> {
+                  <span >background-color</span>: <span >$primary-color</span>;
+                }
+                </code></div></div></pre>
+    <ul>
+    <li><strong>Nesting:</strong> Preprocessors let you nest selectors within one another, improving the
+                        readability and organization of your code.</li>
+    </ul>
+    <p>Sass Example:</p>
+    <pre class="preview"><div ><div ><span>scss</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.nav</span> {
+                  <span >ul</span> {
+                    <span >list-style</span>: none;
+                    <span >li</span> {
+                      <span >display</span>: inline-block;
+                      <span >a</span> {
+                        <span >text-decoration</span>: none;
+                      }
+                    }
+                  }
+                }
+                </code></div></div></pre>
+    <ul>
+    <li><strong>Mixins:</strong> Mixins are reusable sets of CSS declarations that can be included in
+                        multiple places, reducing code repetition.</li>
+    </ul>
+    <p>Sass Example:</p>
+    <pre class="preview"><div ><div ><span>scss</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >@mixin</span> center-absolute {
+                  <span >position</span>: absolute;
+                  <span >top</span>: <span >50%</span>;
+                  <span >left</span>: <span >50%</span>;
+                  <span >transform</span>: <span >translate</span>(-<span >50%</span>, -<span >50%</span>);
+                }
+                
+                <span >.modal</span> {
+                  <span >@include</span> center-absolute;
+                  <span >width</span>: <span >300px</span>;
+                }
+                </code></div></div></pre>
+    <p><strong>Importing and Compiling:</strong></p>
+    <ul>
+    <li><strong>Importing:</strong> Preprocessors allow you to split your stylesheets into smaller, modular
+                        files and import them into your main file. This promotes a more organized and maintainable codebase.
+                    </li>
+    </ul>
+    <p>Sass Example:</p>
+    <pre class="preview"><div ><div ><span>scss</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >// main.scss</span>
+                <span >@import</span> <span >'variables'</span>;
+                <span >@import</span> <span >'layout'</span>;
+                <span >@import</span> <span >'buttons'</span>;
+                </code></div></div></pre>
+    <ul>
+    <li><strong>Compiling:</strong> Preprocessors need to be compiled into regular CSS before being used in
+                        web pages. Various tools, such as command-line compilers or build systems, can handle this
+                        compilation process.</li>
+    </ul>
+    <p>For example, if you have a Sass file named <code class="copycode">styles.scss</code>, you can compile it to CSS using the
+                    command:</p>
+    <pre class="preview"><div ><div ><span>bash</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code >sass styles.scss styles.css
+                </code></div></div></pre>
+    <p>Overall, CSS preprocessors like Sass and Less enhance your ability to write clean, efficient, and modular
+                    stylesheets. By utilizing variables, nesting, mixins, importing, and compiling, you can streamline your
+                    CSS workflow and create more maintainable and scalable styles for your web projects.</p>
+    </div>
+    <div >
+    <p><strong>CSS Methodologies:</strong></p>
+    <p><strong>BEM (Block Element Modifier):</strong>
+                    BEM is a popular CSS methodology that promotes a structured and organized approach to naming classes. It
+                    divides components into blocks, elements, and modifiers, making it easier to understand the
+                    relationships between different parts of the UI.</p>
+    <ul>
+    <li><strong>Block:</strong> A standalone, reusable component that represents a higher-level element.
+                        It's often a parent container.</li>
+    <li><strong>Element:</strong> A part of the block that can't be used separately. It's denoted by a
+                        double underscore (__).</li>
+    <li><strong>Modifier:</strong> A variation of a block or element, often used to change appearance or
+                        behavior. It's denoted by a double dash (--).</li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >div</span> <span >class</span>=<span >"button"</span>&gt;</span>
+                  <span >&lt;<span >span</span> <span >class</span>=<span >"button__text"</span>&gt;</span>Click me<span >&lt;/<span >span</span>&gt;</span>
+                <span >&lt;/<span >div</span>&gt;</span>
+                <span >&lt;<span >div</span> <span >class</span>=<span >"button button--disabled"</span>&gt;</span>
+                  <span >&lt;<span >span</span> <span >class</span>=<span >"button__text"</span>&gt;</span>Disabled<span >&lt;/<span >span</span>&gt;</span>
+                <span >&lt;/<span >div</span>&gt;</span>
+                </code></div></div></pre>
+    <p><strong>SMACSS (Scalable and Modular Architecture for CSS):</strong>
+                    SMACSS is a methodology that emphasizes the separation of concerns in CSS. It provides guidelines for
+                    categorizing styles and structuring files based on the purpose of each style rule.</p>
+    <ul>
+    <li><strong>Base:</strong> Defines defaults for HTML elements (e.g., reset, typography).</li>
+    <li><strong>Layout:</strong> Handles layout and positioning of major components.</li>
+    <li><strong>Module:</strong> Contains reusable components.</li>
+    <li><strong>State:</strong> Deals with temporary states or modifications (e.g., active, hidden).</li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Base */</span>
+                <span >body</span> {
+                  <span >font-family</span>: Arial, sans-serif;
+                }
+                
+                <span >/* Layout */</span>
+                <span >.header</span> {
+                  <span >width</span>: <span >100%</span>;
+                  <span >background-color</span>: <span >#333</span>;
+                }
+                
+                <span >/* Module */</span>
+                <span >.button</span> {
+                  <span >display</span>: inline-block;
+                  <span >padding</span>: <span >10px</span> <span >20px</span>;
+                  <span >background-color</span>: blue;
+                }
+                
+                <span >/* State */</span>
+                <span >.button</span><span >.is-disabled</span> {
+                  <span >opacity</span>: <span >0.5</span>;
+                  <span >cursor</span>: not-allowed;
+                }
+                </code></div></div></pre>
+    <p><strong>OOCSS (Object-Oriented CSS):</strong>
+                    OOCSS aims to encourage the creation of reusable and scalable CSS by promoting the separation of
+                    structure and skin. It encourages the creation of small, independent, and reusable modules.</p>
+    <ul>
+    <li><strong>Structure:</strong> Defines layout and positioning rules that can be reused.</li>
+    <li><strong>Skin:</strong> Defines visual styles that can be applied to different structures.</li>
+    </ul>
+    <p>Example:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Structure */</span>
+                <span >.container</span> {
+                  <span >width</span>: <span >100%</span>;
+                  <span >margin</span>: <span >0</span> auto;
+                }
+                
+                <span >/* Skin */</span>
+                <span >.button</span> {
+                  <span >display</span>: inline-block;
+                  <span >padding</span>: <span >10px</span> <span >20px</span>;
+                  <span >background-color</span>: blue;
+                }
+                
+                <span >/* Applying structure and skin */</span>
+                &lt;<span >div</span> class="container"&gt;
+                  &lt;<span >button</span> class="<span >button</span>"&gt;Click me&lt;/<span >button</span>&gt;
+                &lt;/<span >div</span>&gt;
+                </code></div></div></pre>
+    <p><strong>Benefits of Using Methodologies:</strong></p>
+    <ul>
+    <li><strong>Consistency:</strong> Methodologies enforce consistent naming conventions and coding
+                        practices, making the codebase more organized and easier to navigate.</li>
+    <li><strong>Modularity:</strong> Components are isolated and can be reused throughout the project,
+                        leading to faster development and fewer duplicated styles.</li>
+    <li><strong>Scalability:</strong> Methodologies provide structures that scale well as the project grows,
+                        making it easier to manage larger codebases.</li>
+    <li><strong>Maintenance:</strong> Clear separation of concerns and organized structures make it simpler
+                        to update and maintain styles over time.</li>
+    <li><strong>Collaboration:</strong> When multiple developers work on the same project, using a
+                        methodology ensures a common understanding of coding practices and naming conventions.</li>
+    </ul>
+    <p>By following methodologies like BEM, SMACSS, or OOCSS, developers can build more maintainable, efficient,
+                    and scalable CSS for their web projects.</p>
+    </div>
+    <div >
+    <p><strong>CSS Architecture and Best Practices:</strong></p>
+    <p><strong>Separate Concerns:</strong>
+                    Maintaining a clear separation between HTML structure and CSS presentation is fundamental to an
+                    organized codebase. This practice enhances code readability and allows for more efficient collaboration
+                    between developers.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!-- Good example: HTML structure --&gt;</span>
+                    <span >&lt;<span >header</span> <span >class</span>=<span >"header"</span>&gt;</span>
+                      <span >&lt;<span >nav</span> <span >class</span>=<span >"nav"</span>&gt;</span>
+                        <span >&lt;<span >ul</span> <span >class</span>=<span >"nav-list"</span>&gt;</span>
+                          <span >&lt;<span >li</span> <span >class</span>=<span >"nav-item"</span>&gt;</span><span >&lt;<span >a</span> <span >href</span>=<span >"#"</span>&gt;</span>Home<span >&lt;/<span >a</span>&gt;</span><span >&lt;/<span >li</span>&gt;</span>
+                          <span >&lt;<span >li</span> <span >class</span>=<span >"nav-item"</span>&gt;</span><span >&lt;<span >a</span> <span >href</span>=<span >"#"</span>&gt;</span>About<span >&lt;/<span >a</span>&gt;</span><span >&lt;/<span >li</span>&gt;</span>
+                          <span >&lt;!-- ... --&gt;</span>
+                        <span >&lt;/<span >ul</span>&gt;</span>
+                      <span >&lt;/<span >nav</span>&gt;</span>
+                    <span >&lt;/<span >header</span>&gt;</span>
+                    </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Good example: CSS presentation */</span>
+                    <span >.header</span> {
+                      <span >background-color</span>: <span >#333</span>;
+                      <span >padding</span>: <span >20px</span>;
+                    }
+                    
+                    <span >.nav-list</span> {
+                      <span >list-style</span>: none;
+                      <span >display</span>: flex;
+                      <span >/* ... */</span>
+                    }
+                    </code></div></div></pre>
+    <p><strong>Specificity and Avoiding Overuse:</strong>
+                    Appropriate specificity in your selectors prevents conflicts and ensures styles are applied as intended.
+                </p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Avoid overly specific selectors */</span>
+                    <span >/* Bad example */</span>
+                    <span >.header</span> <span >.nav</span> <span >.nav-list</span> <span >li</span><span >.nav-item</span> <span >a</span> {
+                      <span >color</span>: blue;
+                    }
+                    
+                    <span >/* Prefer less specific selectors */</span>
+                    <span >/* Good example */</span>
+                    <span >.nav-item</span> <span >a</span> {
+                      <span >color</span>: blue;
+                    }
+                    </code></div></div></pre>
+    <p><strong>Naming Conventions:</strong>
+                    Consistent and meaningful class names improve code readability and collaboration. BEM (Block Element
+                    Modifier) is a popular naming convention that promotes clarity.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!-- BEM naming convention example --&gt;</span>
+                    <span >&lt;<span >div</span> <span >class</span>=<span >"header"</span>&gt;</span>
+                      <span >&lt;<span >nav</span> <span >class</span>=<span >"header__nav"</span>&gt;</span>
+                        <span >&lt;<span >ul</span> <span >class</span>=<span >"nav-list"</span>&gt;</span>
+                          <span >&lt;<span >li</span> <span >class</span>=<span >"nav-list__item"</span>&gt;</span><span >&lt;<span >a</span> <span >class</span>=<span >"nav-list__link"</span> <span >href</span>=<span >"#"</span>&gt;</span>Home<span >&lt;/<span >a</span>&gt;</span><span >&lt;/<span >li</span>&gt;</span>
+                          <span >&lt;<span >li</span> <span >class</span>=<span >"nav-list__item"</span>&gt;</span><span >&lt;<span >a</span> <span >class</span>=<span >"nav-list__link"</span> <span >href</span>=<span >"#"</span>&gt;</span>About<span >&lt;/<span >a</span>&gt;</span><span >&lt;/<span >li</span>&gt;</span>
+                          <span >&lt;!-- ... --&gt;</span>
+                        <span >&lt;/<span >ul</span>&gt;</span>
+                      <span >&lt;/<span >nav</span>&gt;</span>
+                    <span >&lt;/<span >div</span>&gt;</span>
+                    </code></div></div></pre>
+    <p><strong>Performance Optimization:</strong></p>
+    <ul>
+    <li><strong>Minification:</strong>
+                        Minify your CSS to reduce file size by removing whitespace, comments, and unnecessary characters.
+                    </li>
+    </ul>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Original CSS */</span>
+                    <span >body</span> {
+                      <span >margin</span>: <span >20px</span>;
+                      <span >background-color</span>: white;
+                    }
+                    
+                    <span >/* Minified CSS */</span>
+                    <span >body</span>{<span >margin</span>:<span >20px</span>;<span >background-color</span>:white;}
+                    </code></div></div></pre>
+    <ul>
+    <li><strong>Bundling:</strong>
+                        Combine multiple CSS files into one to reduce the number of requests made to the server.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!-- Linking multiple stylesheets --&gt;</span>
+                    <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"styles.css"</span>&gt;</span>
+                    <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"buttons.css"</span>&gt;</span>
+                    <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"layout.css"</span>&gt;</span>
+                    
+                    <span >&lt;!-- Bundled stylesheet --&gt;</span>
+                    <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"bundle.css"</span>&gt;</span>
+                    </code></div></div></pre>
+    <ul>
+    <li><strong>Critical CSS:</strong>
+                        Include critical CSS inline to ensure fast rendering of essential styles.</li>
+    </ul>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >head</span>&gt;</span>
+                      <span >&lt;<span >style</span>&gt;</span><span >
+                        <span >/* Critical styles for above-the-fold content */</span>
+                      </span><span >&lt;/<span >style</span>&gt;</span>
+                      <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"styles.css"</span>&gt;</span>
+                    <span >&lt;/<span >head</span>&gt;</span>
+                    </code></div></div></pre>
+    <p><strong>Responsive Design and Media Queries:</strong></p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Media queries for responsive design */</span>
+                    <span >/* Good example */</span>
+                    <span >@media</span> (<span >max-width</span>: <span >768px</span>) {
+                      <span >.header</span> {
+                        <span >padding</span>: <span >10px</span>;
+                      }
+                    }
+                    
+                    <span >/* Avoid overusing media queries */</span>
+                    <span >/* Bad example */</span>
+                    <span >.header</span> {
+                      <span >padding</span>: <span >20px</span>;
+                    }
+                    
+                    <span >@media</span> (<span >max-width</span>: <span >768px</span>) {
+                      <span >.header</span> {
+                        <span >padding</span>: <span >10px</span>;
+                      }
+                    }
+                    </code></div></div></pre>
+    <p><strong>Comments and Documentation:</strong></p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Use comments to explain complex logic */</span>
+                    <span >/* Good example */</span>
+                    <span >/* Style for navigation links */</span>
+                    <span >.nav-list__link</span> {
+                      <span >color</span>: blue;
+                    }
+                    
+                    <span >/* Avoid unclear comments */</span>
+                    <span >/* Bad example */</span>
+                    <span >/* Styling */</span>
+                    <span >.link</span> {
+                      <span >color</span>: blue;
+                    }
+                    </code></div></div></pre>
+    <p><strong>Version Control and Collaboration:</strong></p>
+    <p>Version control helps manage changes and collaboration among developers. Collaborative platforms like
+                    GitHub enhance team communication.</p>
+    <pre class="preview"><div ><div ><span>bash</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span ># Initialize a Git repository</span>
+                    git init
+                    
+                    <span ># Commit changes</span>
+                    git add .
+                    git commit -m <span >"Initial commit"</span>
+                    
+                    <span ># Push to a remote repository</span>
+                    git remote add origin &lt;repository-url&gt;
+                    git push -u origin master
+                    </code></div></div></pre>
+    <p>Adhering to these CSS architecture and best practices creates a well-structured, efficient, and
+                    maintainable codebase that contributes to a smoother development process and better user experience.</p>
+    </div>
+    <div >
+    <p><strong>Browser Compatibility and Prefixing:</strong></p>
+    <p><strong>Dealing with Vendor Prefixes:</strong>
+                    Vendor prefixes are used to apply experimental or non-standard CSS properties in different browsers.
+                    While many properties are now widely supported without prefixes, some older browsers still require them.
+                </p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* Example of vendor prefixes for gradient background */</span>
+                <span >.gradient</span> {
+                  <span >background</span>: <span >-webkit-linear-gradient</span>(red, yellow); <span >/* Safari, Chrome */</span>
+                  <span >background</span>: <span >-moz-linear-gradient</span>(red, yellow); <span >/* Firefox */</span>
+                  <span >background</span>: <span >-o-linear-gradient</span>(red, yellow); <span >/* Opera */</span>
+                  <span >background</span>: <span >-ms-linear-gradient</span>(red, yellow); <span >/* IE */</span>
+                  <span >background</span>: <span >linear-gradient</span>(red, yellow);
+                }
+                </code></div></div></pre>
+    <p><strong>Using Autoprefixer Tools:</strong>
+                    Autoprefixer is a tool that automatically adds the necessary vendor prefixes to your CSS based on the
+                    defined level of browser support. It simplifies the process of ensuring cross-browser compatibility.</p>
+    <p><strong>Installation:</strong>
+                    Autoprefixer can be used as a standalone command-line tool or integrated into build tools like Grunt,
+                    Gulp, or Webpack.</p>
+    <p>Example using Autoprefixer in a Grunt workflow:</p>
+    <ol>
+    <li>Install Autoprefixer and Grunt plugins:</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>bash</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code >npm install grunt-autoprefixer grunt-contrib-cssmin --save-dev
+                </code></div></div></pre>
+    <ol start="2">
+    <li>Configure Grunt tasks in your <code class="copycode">Gruntfile.js</code>:</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>js</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >module</span>.<span >exports</span> = <span >function</span>(<span >grunt</span>) {
+                  grunt.<span >initConfig</span>({
+                    <span >autoprefixer</span>: {
+                      <span >options</span>: {
+                        <span >browsers</span>: [<span >'last 2 versions'</span>, <span >'ie 11'</span>, <span >'ios 8'</span>]
+                      },
+                      <span >dist</span>: {
+                        <span >files</span>: {
+                          <span >'dist/styles.css'</span>: <span >'src/styles.css'</span>
+                        }
+                      }
+                    },
+                    <span >cssmin</span>: {
+                      <span >target</span>: {
+                        <span >files</span>: {
+                          <span >'dist/styles.min.css'</span>: [<span >'dist/styles.css'</span>]
+                        }
+                      }
+                    }
+                  });
+                
+                  grunt.<span >loadNpmTasks</span>(<span >'grunt-autoprefixer'</span>);
+                  grunt.<span >loadNpmTasks</span>(<span >'grunt-contrib-cssmin'</span>);
+                
+                  grunt.<span >registerTask</span>(<span >'default'</span>, [<span >'autoprefixer'</span>, <span >'cssmin'</span>]);
+                };
+                </code></div></div></pre>
+    <p>In this example, the Grunt tasks <code class="copycode">autoprefixer</code> and <code class="copycode">cssmin</code> are used to add
+                    prefixes and minify the CSS, respectively.</p>
+    <p><strong>Using Autoprefixer with PostCSS:</strong>
+                    Autoprefixer can also be used as a PostCSS plugin. If you're using a tool like Webpack or Gulp, you can
+                    integrate Autoprefixer as part of your CSS build process.</p>
+    <p><strong>Example Using Autoprefixer with PostCSS in a Webpack Workflow:</strong></p>
+    <ol>
+    <li>Install necessary packages:</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>bash</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code >npm install postcss-loader autoprefixer css-loader style-loader --save-dev
+                </code></div></div></pre>
+    <ol start="2">
+    <li>Configure PostCSS in your Webpack configuration (e.g., <code class="copycode">webpack.config.js</code>):</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>js</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >module</span>.<span >exports</span> = {
+                  <span >module</span>: {
+                    <span >rules</span>: [
+                      {
+                        <span >test</span>: <span >/\.css$/</span>,
+                        <span >use</span>: [
+                          <span >'style-loader'</span>,
+                          <span >'css-loader'</span>,
+                          <span >'postcss-loader'</span>
+                        ]
+                      }
+                    ]
+                  }
+                };
+                </code></div></div></pre>
+    <ol start="3">
+    <li>Create a <code class="copycode">postcss.config.js</code> file in your project root:</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>js</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >module</span>.<span >exports</span> = {
+                  <span >plugins</span>: {
+                    <span >autoprefixer</span>: {
+                      <span >browsers</span>: [<span >'last 2 versions'</span>, <span >'ie 11'</span>, <span >'ios 8'</span>]
+                    }
+                  }
+                };
+                </code></div></div></pre>
+    <p>With this setup, Webpack will apply Autoprefixer as part of its CSS processing pipeline.</p>
+    <p>By utilizing tools like Autoprefixer, you can ensure that your CSS is compatible with a wide range of
+                    browsers without manually adding vendor prefixes. This saves time, reduces the risk of compatibility
+                    issues, and helps create a smoother user experience across different devices and platforms.</p>
+    </div>
+    <div >
+    <p><strong>Debugging and DevTools:</strong></p>
+    <p><strong>Inspecting and Editing CSS in Browser DevTools:</strong></p>
+    <p>Modern web browsers come equipped with powerful Developer Tools (DevTools) that provide a suite of
+                    features for debugging and inspecting your web pages, including their CSS.</p>
+    <ol>
+    <li>
+    <p><strong>Accessing DevTools:</strong></p>
+    <ul>
+    <li>Most browsers allow you to open DevTools by right-clicking on an element and selecting
+                                "Inspect" or by pressing <code class="copycode">F12</code> or <code class="copycode">Ctrl+Shift+I</code>
+                                (<code class="copycode">Cmd+Option+I</code> on Mac).</li>
+    <li>Alternatively, you can also right-click on a page and choose "Inspect Element" to open the
+                                DevTools directly to that element.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Inspecting Elements:</strong></p>
+    <ul>
+    <li>In the "Elements" or "Inspector" panel of DevTools, you can select and hover over HTML
+                                elements to see their corresponding CSS rules highlighted in the Styles tab.</li>
+    <li>Clicking on an element will display its computed styles, applied rules, and the styles'
+                                sources.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Editing Styles:</strong></p>
+    <ul>
+    <li>You can edit existing styles directly in the Styles tab by double-clicking the value of a
+                                property and entering a new value.</li>
+    <li>Changes made here are temporary and will not affect your actual CSS files.</li>
+    </ul>
+    </li>
+    </ol>
+    <p><strong>Using Browser Extensions for CSS Development:</strong></p>
+    <p>Browser extensions can enhance your CSS development workflow by providing additional tools and
+                    functionalities. Here are a few notable extensions:</p>
+    <ol>
+    <li>
+    <p><strong>Web Developer:</strong></p>
+    <ul>
+    <li>The Web Developer extension offers various tools, including an option to outline elements
+                                based on their box model, display rulers, and more.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>ColorZilla:</strong></p>
+    <ul>
+    <li>ColorZilla helps you pick colors from web pages and generate color palettes. It also
+                                includes a CSS gradient generator.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>CSS Viewer:</strong></p>
+    <ul>
+    <li>CSS Viewer allows you to inspect and copy computed CSS styles directly from an element.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>WhatFont:</strong></p>
+    <ul>
+    <li>WhatFont lets you easily identify fonts used on a webpage by hovering over the text.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>User-Agent Switcher:</strong></p>
+    <ul>
+    <li>While not exclusively for CSS, this extension allows you to change your browser's user agent
+                                to see how your site looks on different devices or browsers.</li>
+    </ul>
+    </li>
+    </ol>
+    <p><strong>Example of Using DevTools:</strong></p>
+    <p>Imagine you want to debug the positioning of an element that is not appearing correctly on your webpage.
+                </p>
+    <ol>
+    <li>
+    <p>Open DevTools:</p>
+    <ul>
+    <li>Right-click on the element you want to inspect and select "Inspect" or use the keyboard
+                                shortcut.</li>
+    </ul>
+    </li>
+    <li>
+    <p>Identify the Problem:</p>
+    <ul>
+    <li>In the "Elements" panel, look for the problematic element. Hover over it to highlight its
+                                area on the page.</li>
+    </ul>
+    </li>
+    <li>
+    <p>Examine Styles:</p>
+    <ul>
+    <li>In the "Styles" section of the "Elements" panel, review the applied CSS rules and computed
+                                styles. Look for any conflicting or missing styles.</li>
+    </ul>
+    </li>
+    <li>
+    <p>Test Changes:</p>
+    <ul>
+    <li>You can directly modify styles in the Styles tab to see the immediate effect on the element.
+                                This helps in identifying the solution before making permanent changes to your CSS files.
+                            </li>
+    </ul>
+    </li>
+    </ol>
+    <p>DevTools and browser extensions provide invaluable assistance in identifying and fixing CSS issues in
+                    real-time. They also offer insights into how your styles are applied and help you experiment with
+                    changes before updating your actual codebase.</p>
+    </div>
+    <div >
+    <p><strong>CSS Frameworks:</strong></p>
+    <p><strong>Introduction to Popular Frameworks:</strong></p>
+    <p>CSS frameworks are pre-built sets of CSS and sometimes JavaScript components that provide a foundation
+                    for building responsive and visually appealing websites quickly and efficiently. Here are three popular
+                    CSS frameworks:</p>
+    <ol>
+    <li>
+    <p><strong>Bootstrap:</strong></p>
+    <ul>
+    <li>Developed by Twitter, Bootstrap is one of the most widely used CSS frameworks. It offers a
+                                comprehensive collection of responsive grid layouts, UI components, and JavaScript plugins.
+                            </li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Foundation:</strong></p>
+    <ul>
+    <li>Developed by ZURB, Foundation is another robust framework that offers a flexible grid
+                                system, customizable UI components, and a mobile-first approach to design.</li>
+    </ul>
+    </li>
+    <li>
+    <p><strong>Bulma:</strong></p>
+    <ul>
+    <li>Bulma is a modern CSS framework based on Flexbox. It focuses on simplicity and flexibility,
+                                providing a clean and intuitive way to build responsive layouts.</li>
+    </ul>
+    </li>
+    </ol>
+    <p><strong>Benefits of Using Frameworks:</strong></p>
+    <ul>
+    <li><strong>Rapid Development:</strong> Frameworks provide ready-to-use components and layouts that
+                        speed up the development process.</li>
+    <li><strong>Consistency:</strong> Components and styles provided by frameworks ensure a consistent look
+                        and feel across the website.</li>
+    <li><strong>Responsive Design:</strong> Frameworks often come with built-in responsive features, making
+                        it easier to create mobile-friendly designs.</li>
+    <li><strong>Community Support:</strong> Popular frameworks have active communities, which means you can
+                        find tutorials, documentation, and help easily.</li>
+    <li><strong>Compatibility:</strong> Frameworks are designed to work well across various browsers and
+                        devices.</li>
+    <li><strong>Updated Design Trends:</strong> Frameworks often incorporate modern design trends, keeping
+                        your website up-to-date.</li>
+    </ul>
+    <p><strong>Drawbacks of Using Frameworks:</strong></p>
+    <ul>
+    <li><strong>Learning Curve:</strong> Learning how to use a framework effectively can take time, and
+                        customization may require understanding its structure.</li>
+    <li><strong>Limited Flexibility:</strong> While frameworks offer flexibility, they might not fit
+                        perfectly with unique design requirements.</li>
+    <li><strong>File Size:</strong> Including an entire framework might lead to larger file sizes, affecting
+                        page load times.</li>
+    <li><strong>Overhead:</strong> Some websites might not require the full range of components and features
+                        provided by frameworks, leading to unnecessary code.</li>
+    </ul>
+    <p><strong>Example Using Bootstrap:</strong></p>
+    <p>Let's consider using Bootstrap to create a simple navigation bar for a website:</p>
+    <ol>
+    <li><strong>Include Bootstrap:</strong>
+    <ul>
+    <li>Add the Bootstrap CSS and JavaScript files to your HTML document.</li>
+    </ul>
+    </li>
+    </ol>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!DOCTYPE <span >html</span>&gt;</span>
+    <span >&lt;<span >html</span> <span >lang</span>=<span >"en"</span>&gt;</span>
+    <span >&lt;<span >head</span>&gt;</span>
+      <span >&lt;<span >meta</span> <span >charset</span>=<span >"UTF-8"</span>&gt;</span>
+      <span >&lt;<span >meta</span> <span >name</span>=<span >"viewport"</span> <span >content</span>=<span >"width=device-width, initial-scale=1.0"</span>&gt;</span>
+      <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span>&gt;</span>
+      <span >&lt;<span >title</span>&gt;</span>Bootstrap Example<span >&lt;/<span >title</span>&gt;</span>
+    <span >&lt;/<span >head</span>&gt;</span>
+    <span >&lt;<span >body</span>&gt;</span>
+      <span >&lt;!-- Navigation Bar --&gt;</span>
+      <span >&lt;<span >nav</span> <span >class</span>=<span >"navbar navbar-expand-lg navbar-light bg-light"</span>&gt;</span>
+        <span >&lt;<span >div</span> <span >class</span>=<span >"container"</span>&gt;</span>
+          <span >&lt;<span >a</span> <span >class</span>=<span >"navbar-brand"</span> <span >href</span>=<span >"#"</span>&gt;</span>My Website<span >&lt;/<span >a</span>&gt;</span>
+          <span >&lt;<span >button</span> <span >class</span>=<span >"navbar-toggler"</span> <span >type</span>=<span >"button"</span> <span >data-bs-toggle</span>=<span >"collapse"</span> <span >data-bs-target</span>=<span >"#navbarNav"</span> <span >aria-controls</span>=<span >"navbarNav"</span> <span >aria-expanded</span>=<span >"false"</span> <span >aria-label</span>=<span >"Toggle navigation"</span>&gt;</span>
+            <span >&lt;<span >span</span> <span >class</span>=<span >"navbar-toggler-icon"</span>&gt;</span><span >&lt;/<span >span</span>&gt;</span>
+          <span >&lt;/<span >button</span>&gt;</span>
+          <span >&lt;<span >div</span> <span >class</span>=<span >"collapse navbar-collapse"</span> <span >id</span>=<span >"navbarNav"</span>&gt;</span>
+            <span >&lt;<span >ul</span> <span >class</span>=<span >"navbar-nav ml-auto"</span>&gt;</span>
+              <span >&lt;<span >li</span> <span >class</span>=<span >"nav-item active"</span>&gt;</span>
+                <span >&lt;<span >a</span> <span >class</span>=<span >"nav-link"</span> <span >href</span>=<span >"#"</span>&gt;</span>Home<span >&lt;/<span >a</span>&gt;</span>
+              <span >&lt;/<span >li</span>&gt;</span>
+              <span >&lt;<span >li</span> <span >class</span>=<span >"nav-item"</span>&gt;</span>
+                <span >&lt;<span >a</span> <span >class</span>=<span >"nav-link"</span> <span >href</span>=<span >"#"</span>&gt;</span>About<span >&lt;/<span >a</span>&gt;</span>
+              <span >&lt;/<span >li</span>&gt;</span>
+              <span >&lt;<span >li</span> <span >class</span>=<span >"nav-item"</span>&gt;</span>
+                <span >&lt;<span >a</span> <span >class</span>=<span >"nav-link"</span> <span >href</span>=<span >"#"</span>&gt;</span>Services<span >&lt;/<span >a</span>&gt;</span>
+              <span >&lt;/<span >li</span>&gt;</span>
+              <span >&lt;<span >li</span> <span >class</span>=<span >"nav-item"</span>&gt;</span>
+                <span >&lt;<span >a</span> <span >class</span>=<span >"nav-link"</span> <span >href</span>=<span >"#"</span>&gt;</span>Contact<span >&lt;/<span >a</span>&gt;</span>
+              <span >&lt;/<span >li</span>&gt;</span>
+            <span >&lt;/<span >ul</span>&gt;</span>
+          <span >&lt;/<span >div</span>&gt;</span>
+        <span >&lt;/<span >div</span>&gt;</span>
+      <span >&lt;/<span >nav</span>&gt;</span>
+    
+      <span >&lt;!-- Content Goes Here --&gt;</span>
+    
+      <span >&lt;<span >script</span> <span >src</span>=<span >"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"</span>&gt;</span><span >&lt;/<span >script</span>&gt;</span>
+    <span >&lt;/<span >body</span>&gt;</span>
+    <span >&lt;/<span >html</span>&gt;</span>
+    </code></div></div></pre>
+    <p>In this example, Bootstrap provides a responsive navigation bar with a collapsible menu button for
+                    smaller screens.</p>
+    <p>While CSS frameworks offer advantages like faster development and a consistent design, they should be
+                    chosen based on the specific needs of your project. Understanding the trade-offs and potential
+                    constraints of using frameworks is essential for making an informed decision.</p>
+    </div>
+    <div >
+    <p><strong>Advanced CSS Techniques:</strong></p>
+    <p><strong>Advanced Layout Techniques:</strong></p>
+    <p>Advanced layout techniques involve using CSS features to create complex and dynamic layouts. Techniques
+                    like Flexbox and CSS Grid provide powerful tools for creating responsive and intricate layouts.</p>
+    <p>Example using CSS Grid:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >div</span> <span >class</span>=<span >"grid-container"</span>&gt;</span>
+        <span >&lt;<span >div</span> <span >class</span>=<span >"grid-item"</span>&gt;</span>1<span >&lt;/<span >div</span>&gt;</span>
+        <span >&lt;<span >div</span> <span >class</span>=<span >"grid-item"</span>&gt;</span>2<span >&lt;/<span >div</span>&gt;</span>
+        <span >&lt;<span >div</span> <span >class</span>=<span >"grid-item"</span>&gt;</span>3<span >&lt;/<span >div</span>&gt;</span>
+        <span >&lt;<span >div</span> <span >class</span>=<span >"grid-item"</span>&gt;</span>4<span >&lt;/<span >div</span>&gt;</span>
+      <span >&lt;/<span >div</span>&gt;</span>
+      </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.grid-container</span> {
+        <span >display</span>: grid;
+        <span >grid-template-columns</span>: <span >repeat</span>(<span >2</span>, <span >1</span>fr);
+        <span >grid-gap</span>: <span >10px</span>;
+      }
+      
+      <span >.grid-item</span> {
+        <span >background-color</span>: lightblue;
+        <span >padding</span>: <span >20px</span>;
+      }
+      </code></div></div></pre>
+    <p><strong>CSS Custom Properties (Variables):</strong></p>
+    <p>Custom properties, also known as CSS variables, allow you to define reusable values that can be used
+                    throughout your stylesheet. They provide more dynamic control over styles and make it easier to maintain
+                    consistent design patterns.</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >:root</span> {
+        <span >--primary-color</span>: <span >#3498db</span>;
+      }
+      
+      <span >.button</span> {
+        <span >background-color</span>: <span >var</span>(--primary-color);
+      }
+      </code></div></div></pre>
+    <p><strong>Advanced Animations and Transitions:</strong></p>
+    <p>Advanced animations can be achieved using keyframes and combining multiple CSS properties for intricate
+                    effects.</p>
+    <p>Example of Keyframe Animation:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >@keyframes</span> slide {
+        <span >from</span> {
+          <span >transform</span>: <span >translateX</span>(<span >0</span>);
+          <span >opacity</span>: <span >0</span>;
+        }
+        <span >to</span> {
+          <span >transform</span>: <span >translateX</span>(<span >100px</span>);
+          <span >opacity</span>: <span >1</span>;
+        }
+      }
+      
+      <span >.slide-in</span> {
+        <span >animation</span>: slide <span >0.5s</span> ease-in-out;
+      }
+      </code></div></div></pre>
+    <p><strong>Creating Custom Checkboxes and Radio Buttons:</strong></p>
+    <p>Styling checkboxes and radio buttons allows you to create custom UI elements that match your design.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >label</span> <span >class</span>=<span >"custom-checkbox"</span>&gt;</span>
+        <span >&lt;<span >input</span> <span >type</span>=<span >"checkbox"</span>&gt;</span>
+        <span >&lt;<span >span</span> <span >class</span>=<span >"checkmark"</span>&gt;</span><span >&lt;/<span >span</span>&gt;</span>
+        Checkbox Label
+      <span >&lt;/<span >label</span>&gt;</span>
+      </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.custom-checkbox</span> {
+        <span >position</span>: relative;
+        <span >padding-left</span>: <span >30px</span>;
+        <span >cursor</span>: pointer;
+      }
+      
+      <span >.custom-checkbox</span> <span >input</span> {
+        <span >position</span>: absolute;
+        <span >opacity</span>: <span >0</span>;
+        <span >cursor</span>: pointer;
+      }
+      
+      <span >.checkmark</span> {
+        <span >position</span>: absolute;
+        <span >top</span>: <span >0</span>;
+        <span >left</span>: <span >0</span>;
+        <span >height</span>: <span >20px</span>;
+        <span >width</span>: <span >20px</span>;
+        <span >background-color</span>: <span >#eee</span>;
+      }
+      
+      <span >.custom-checkbox</span> <span >input</span><span >:checked</span> + <span >.checkmark</span> {
+        <span >background-color</span>: <span >#3498db</span>;
+      }
+      </code></div></div></pre>
+    <p><strong>Creating Custom Tooltips:</strong></p>
+    <p>Custom tooltips provide additional information when users hover over elements.</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >div</span> <span >class</span>=<span >"tooltip-container"</span>&gt;</span>
+        Hover over me
+        <span >&lt;<span >span</span> <span >class</span>=<span >"tooltip"</span>&gt;</span>Tooltip content<span >&lt;/<span >span</span>&gt;</span>
+      <span >&lt;/<span >div</span>&gt;</span>
+      </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.tooltip-container</span> {
+        <span >position</span>: relative;
+        <span >display</span>: inline-block;
+      }
+      
+      <span >.tooltip</span> {
+        <span >position</span>: absolute;
+        <span >top</span>: -<span >25px</span>;
+        <span >left</span>: <span >50%</span>;
+        <span >transform</span>: <span >translateX</span>(-<span >50%</span>);
+        <span >background-color</span>: <span >#333</span>;
+        <span >color</span>: <span >#fff</span>;
+        <span >padding</span>: <span >5px</span>;
+        <span >border-radius</span>: <span >5px</span>;
+        <span >opacity</span>: <span >0</span>;
+        <span >transition</span>: opacity <span >0.2s</span>;
+      }
+      
+      <span >.tooltip-container</span><span >:hover</span> <span >.tooltip</span> {
+        <span >opacity</span>: <span >1</span>;
+      }
+      </code></div></div></pre>
+    <p>These advanced CSS techniques allow you to create more sophisticated and visually appealing user
+                    interfaces. They offer greater control and customization over your styles, enabling you to build more
+                    engaging and interactive web experiences.</p>
+    </div>
+    <div >
+    <p><strong>CSS in Modern Web Development:</strong></p>
+    <p><strong>CSS-in-JS Libraries (Styled Components, Emotion):</strong></p>
+    <p>CSS-in-JS is an approach where you write CSS styles using JavaScript instead of separate CSS files. It
+                    encapsulates styles within components, which can improve maintainability and performance.</p>
+    <p><strong>Styled Components Example:</strong></p>
+    <pre class="preview"><div ><div ><span>javascript</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >import</span> styled <span >from</span> <span >'styled-components'</span>;
+    
+                <span >const</span> <span >Button</span> = styled.<span >button</span><span >`
+                  background-color: <span >${props =&gt; props.primary ? <span >'blue'</span> : <span >'gray'</span>}</span>;
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                `</span>;
+                
+                <span >// Usage</span>
+                <span ><span >&lt;<span >Button</span> <span >primary</span>&gt;</span>Primary Button<span >&lt;/<span >Button</span>&gt;</span></span>
+                <span ><span >&lt;<span >Button</span>&gt;</span>Secondary Button<span >&lt;/<span >Button</span>&gt;</span></span>
+                </code></div></div></pre>
+    <p><strong>Emotion Example:</strong></p>
+    <pre class="preview"><div ><div ><span>javascript</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >import</span> { css } <span >from</span> <span >'@emotion/react'</span>;
+                
+                <span >const</span> buttonStyles = css`<span >
+                  <span >background-color</span>: blue;
+                  <span >color</span>: white;
+                  <span >padding</span>: <span >10px</span> <span >20px</span>;
+                  <span >border</span>: none;
+                `</span>;
+                
+                <span >// Usage</span>
+                <span ><span >&lt;<span >button</span> <span >css</span>=<span >{buttonStyles}</span>&gt;</span>Button<span >&lt;/<span >button</span>&gt;</span></span>
+                </code></div></div></pre>
+    <p><strong>CSS Modules and Scoped CSS:</strong></p>
+    <p>CSS Modules and Scoped CSS are techniques that allow you to create locally scoped CSS styles. They
+                    prevent styles from bleeding into other components.</p>
+    <p><strong>CSS Modules Example:</strong></p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* styles.module.css */</span>
+                <span >.button</span> {
+                  <span >background-color</span>: blue;
+                  <span >color</span>: white;
+                  <span >padding</span>: <span >10px</span> <span >20px</span>;
+                  <span >border</span>: none;
+                }
+                </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>javascript</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >import</span> styles <span >from</span> <span >'./styles.module.css'</span>;
+                
+                <span >// Usage</span>
+                <span ><span >&lt;<span >button</span> <span >className</span>=<span >{styles.button}</span>&gt;</span>Button<span >&lt;/<span >button</span>&gt;</span></span>
+                </code></div></div></pre>
+    <p><strong>Theming and Dark Mode:</strong></p>
+    <p>Theming allows you to create consistent design systems by defining variables for colors, typography,
+                    spacing, etc. Dark mode, on the other hand, provides an alternative color scheme for improved
+                    readability in low-light environments.</p>
+    <p><strong>Theming Example:</strong></p>
+    <pre class="preview"><div ><div ><span>javascript</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >// Theme.js</span>
+                <span >export</span> <span >const</span> lightTheme = {
+                  <span >backgroundColor</span>: <span >'white'</span>,
+                  <span >textColor</span>: <span >'black'</span>,
+                };
+                
+                <span >export</span> <span >const</span> darkTheme = {
+                  <span >backgroundColor</span>: <span >'black'</span>,
+                  <span >textColor</span>: <span >'white'</span>,
+                };
+                </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>javascript</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >// App.js</span>
+                <span >import</span> { <span >ThemeProvider</span> } <span >from</span> <span >'styled-components'</span>;
+                <span >import</span> { lightTheme, darkTheme } <span >from</span> <span >'./Theme'</span>;
+                
+                <span >function</span> <span >App</span>(<span ></span>) {
+                  <span >const</span> isDarkMode = <span >/* logic to determine dark mode */</span>;
+                  <span >const</span> theme = isDarkMode ? darkTheme : lightTheme;
+                
+                  <span >return</span> (
+                    <span ><span >&lt;<span >ThemeProvider</span> <span >theme</span>=<span >{theme}</span>&gt;</span>
+                      {/* App content */}
+                    <span >&lt;/<span >ThemeProvider</span>&gt;</span></span>
+                  );
+                }
+                </code></div></div></pre>
+    <p><strong>Conclusion:</strong></p>
+    <p>Modern web development often involves using CSS-in-JS libraries like Styled Components and Emotion for
+                    component-scoped styling. CSS Modules and scoped CSS help prevent style conflicts. Theming and dark mode
+                    provide ways to create adaptable and user-friendly interfaces. These techniques empower developers to
+                    build more modular, maintainable, and responsive web applications.</p>
+    </div>
+    <div >
+    <p><strong>CSS Architecture Patterns:</strong></p>
+    <p><strong>Atomic CSS:</strong></p>
+    <p>Atomic CSS is a methodology that involves creating small, single-purpose classes for individual CSS
+                    properties. This approach encourages reusability and modularity by composing classes to style elements.
+                </p>
+    <p>Example of Atomic CSS:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >div</span> <span >class</span>=<span >"bg-blue text-white p-2 m-1 rounded"</span>&gt;</span>
+                    This is a styled element.
+                  <span >&lt;/<span >div</span>&gt;</span>
+                  </code></div></div></pre>
+    <p>In this example, classes like <code class="copycode">bg-blue</code>, <code class="copycode">text-white</code>, <code class="copycode">p-2</code>,
+                    <code class="copycode">m-1</code>, and <code class="copycode">rounded</code> each apply a specific styling property.</p>
+    <p><strong>Utility-First CSS (Tailwind CSS):</strong></p>
+    <p>Utility-first CSS is a philosophy that focuses on creating utility classes for every possible styling
+                    property. Tailwind CSS is a popular framework that embraces this approach, allowing developers to build
+                    interfaces by combining utility classes.</p>
+    <p>Example of Utility-First CSS:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >div</span> <span >class</span>=<span >"bg-blue-500 text-white py-2 px-4 m-2 rounded-md"</span>&gt;</span>
+                    This is a styled element.
+                  <span >&lt;/<span >div</span>&gt;</span>
+                  </code></div></div></pre>
+    <p>Here, classes like <code class="copycode">bg-blue-500</code>, <code class="copycode">text-white</code>, <code class="copycode">py-2</code>,
+                    <code class="copycode">px-4</code>, <code class="copycode">m-2</code>, and <code class="copycode">rounded-md</code> are used to style the element.</p>
+    <p><strong>Component-Based CSS:</strong></p>
+    <p>Component-based CSS involves creating styles that are scoped to specific components. This approach
+                    encourages encapsulation and modularity by styling components independently.</p>
+    <p>Example of Component-Based CSS:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!-- ButtonComponent.vue --&gt;</span>
+                  <span >&lt;<span >template</span>&gt;</span>
+                    <span >&lt;<span >button</span> <span >class</span>=<span >"button"</span>&gt;</span>
+                      <span >&lt;<span >slot</span>&gt;</span><span >&lt;/<span >slot</span>&gt;</span>
+                    <span >&lt;/<span >button</span>&gt;</span>
+                  <span >&lt;/<span >template</span>&gt;</span>
+                  
+                  <span >&lt;<span >style</span> <span >scoped</span>&gt;</span><span >
+                  <span >.button</span> {
+                    <span >background-color</span>: blue;
+                    <span >color</span>: white;
+                    <span >padding</span>: <span >10px</span> <span >20px</span>;
+                    <span >border</span>: none;
+                  }
+                  </span><span >&lt;/<span >style</span>&gt;</span>
+                  </code></div></div></pre>
+    <p>In this example, the button component encapsulates its styles within its own scoped
+                    <code class="copycode">&lt;style&gt;</code> block.</p>
+    <p><strong>Comparing the Patterns:</strong></p>
+    <ul>
+    <li><strong>Atomic CSS:</strong> Provides fine-grained control over styling, but can lead to class
+                        proliferation and make global changes challenging.</li>
+    <li><strong>Utility-First CSS:</strong> Offers rapid development and consistency, but might result in
+                        larger HTML files and less semantic class names.</li>
+    <li><strong>Component-Based CSS:</strong> Encourages modularity and encapsulation, making it easier to
+                        maintain, but might require more initial setup.</li>
+    </ul>
+    <p><strong>When to Choose:</strong></p>
+    <ul>
+    <li><strong>Atomic CSS:</strong> Suitable for small projects or projects with strict design guidelines.
+                    </li>
+    <li><strong>Utility-First CSS:</strong> Ideal for fast prototyping, rapid development, or projects where
+                        consistency is crucial.</li>
+    <li><strong>Component-Based CSS:</strong> Well-suited for large and complex applications, where
+                        modularity and maintainability are top priorities.</li>
+    </ul>
+    <p>Choosing the right architecture pattern depends on your project's requirements, team preferences, and the
+                    trade-offs you are willing to make.</p>
+    </div>
+    <div >
+    <p><strong>Performance Optimization:</strong></p>
+    <p><strong>Critical CSS and Lazy Loading:</strong></p>
+    <p>Critical CSS refers to the minimal set of CSS required to render the visible portion of a web page. By
+                    including critical CSS inline in the <code class="copycode">&lt;head&gt;</code> section of your HTML, you ensure that the
+                    essential styles are loaded quickly while the rest of the CSS loads asynchronously.</p>
+    <p>Example of Critical CSS:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >head</span>&gt;</span>
+                    <span >&lt;<span >style</span>&gt;</span><span >
+                      <span >/* Critical CSS styles for above-the-fold content */</span>
+                    </span><span >&lt;/<span >style</span>&gt;</span>
+                    <span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"styles.css"</span>&gt;</span>
+                  <span >&lt;/<span >head</span>&gt;</span>
+                  </code></div></div></pre>
+    <p>Lazy loading involves loading resources like images and styles only when they are needed, reducing
+                    initial page load times.</p>
+    <p><strong>Reducing Render-Blocking CSS:</strong></p>
+    <p>Render-blocking CSS refers to stylesheets that prevent the rendering of a web page until they are loaded
+                    and processed. To reduce render-blocking CSS:</p>
+    <ol>
+    <li>Place critical CSS inline.</li>
+    <li>Use the <code class="copycode">media</code> attribute in <code class="copycode">&lt;link&gt;</code> tags to load non-critical
+                        stylesheets asynchronously:</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >link</span> <span >rel</span>=<span >"stylesheet"</span> <span >href</span>=<span >"styles.css"</span> <span >media</span>=<span >"print"</span> <span >onload</span>=<span >"this.media='all'"</span>&gt;</span>
+                  </code></div></div></pre>
+    <p><strong>CSS-Inlining for Email Templates:</strong></p>
+    <p>Inlining CSS styles directly into HTML is crucial for email templates, as it ensures consistent rendering
+                    across different email clients. Many email clients do not support external CSS files.</p>
+    <p>Example of CSS-Inlining for Email Templates:</p>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;!DOCTYPE <span >html</span>&gt;</span>
+                  <span >&lt;<span >html</span>&gt;</span>
+                  <span >&lt;<span >head</span>&gt;</span>
+                    <span >&lt;<span >style</span>&gt;</span><span >
+                      <span >/* Inline CSS styles */</span>
+                      <span >body</span> {
+                        <span >font-family</span>: Arial, sans-serif;
+                      }
+                      <span >.button</span> {
+                        <span >background-color</span>: blue;
+                        <span >color</span>: white;
+                        <span >padding</span>: <span >10px</span> <span >20px</span>;
+                        <span >border</span>: none;
+                      }
+                    </span><span >&lt;/<span >style</span>&gt;</span>
+                  <span >&lt;/<span >head</span>&gt;</span>
+                  <span >&lt;<span >body</span>&gt;</span>
+                    <span >&lt;<span >button</span> <span >class</span>=<span >"button"</span>&gt;</span>Click me<span >&lt;/<span >button</span>&gt;</span>
+                  <span >&lt;/<span >body</span>&gt;</span>
+                  <span >&lt;/<span >html</span>&gt;</span>
+                  </code></div></div></pre>
+    <p><strong>Conclusion:</strong></p>
+    <p>Performance optimization in CSS involves strategies like critical CSS, lazy loading, and reducing
+                    render-blocking CSS. These techniques help ensure fast loading times, smooth user experiences, and
+                    consistent rendering across various devices and platforms. For email templates, inlining CSS styles is
+                    essential to achieve consistent design across different email clients.</p>
+    </div>
+    <div >
+    <p><strong>CSS3 and the Future of CSS:</strong></p>
+    <p><strong>New Features in CSS3:</strong></p>
+    <p>CSS3 introduced a plethora of new features that enhanced the capabilities of CSS for styling and layout.
+                </p>
+    <ol>
+    <li><strong>Variables:</strong>
+                        CSS Custom Properties (variables) allow you to define reusable values that can be used throughout
+                        your styles.</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >:root</span> {
+                      <span >--primary-color</span>: blue;
+                    }
+                    
+                    <span >.button</span> {
+                      <span >background-color</span>: <span >var</span>(--primary-color);
+                    }
+                    </code></div></div></pre>
+    <ol start="2">
+    <li><strong><code class="copycode">calc()</code>:</strong>
+                        The <code class="copycode">calc()</code> function lets you perform calculations within CSS property values.</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.container</span> {
+                      <span >width</span>: <span >calc</span>(<span >100%</span> - <span >20px</span>);
+                    }
+                    </code></div></div></pre>
+    <ol start="3">
+    <li><strong>Flexbox and Grid:</strong>
+                        Flexbox and CSS Grid are powerful layout systems that enable more sophisticated and responsive
+                        designs.</li>
+    </ol>
+    <p><strong>CSS4 and Upcoming Specifications:</strong></p>
+    <p>While there's no official CSS4, CSS specifications continue to evolve. Here are some upcoming features:
+                </p>
+    <ol>
+    <li>
+    <p><strong>CSS Grid Level 2:</strong>
+                            Building on the CSS Grid layout, Grid Level 2 aims to enhance subgrid support, making nested
+                            grids more intuitive.</p>
+    </li>
+    <li>
+    <p><strong>CSS Scroll Snap:</strong>
+                            CSS Scroll Snap offers precise control over scroll behavior, allowing you to create smooth
+                            scrolling and snap points.</p>
+    </li>
+    <li>
+    <p><strong>CSS Container Queries:</strong>
+                            Container queries enable elements to adapt their styling based on their container's dimensions,
+                            facilitating responsive components.</p>
+    </li>
+    <li>
+    <p><strong>CSS Logical Properties:</strong>
+                            Logical properties (<code class="copycode">inline-start</code>, <code class="copycode">inline-end</code>,
+                            <code class="copycode">block-start</code>, and <code class="copycode">block-end</code>) help handle layout in different writing
+                            modes.</p>
+    </li>
+    <li>
+    <p><strong>CSS Houdini:</strong>
+                            CSS Houdini is a set of low-level APIs that provide developers more control over the rendering
+                            process, enabling custom CSS features.</p>
+    </li>
+    <li>
+    <p><strong>CSS Custom Paint API:</strong>
+                            Part of CSS Houdini, the Custom Paint API allows for creating custom shapes and patterns
+                            directly in CSS.</p>
+    </li>
+    </ol>
+    <p><strong>Example of Upcoming CSS Specification:</strong></p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >/* CSS Scroll Snap */</span>
+                    <span >.scroll-container</span> {
+                      <span >scroll-snap-type</span>: y mandatory;
+                    }
+                    
+                    <span >.scroll-item</span> {
+                      <span >scroll-snap-align</span>: start;
+                    }
+                    </code></div></div></pre>
+    <p>In this example, the scroll container snaps to items and aligns them to the start of the container.</p>
+    <p>As the CSS landscape evolves, new features and specifications continue to enhance the possibilities of
+                    web design and development. Keeping up-to-date with these changes ensures that you can leverage the
+                    latest tools and techniques to create modern and engaging web experiences.</p>
+    </div>
+    <div >
+    <p><strong>Project Work: Applying CSS Knowledge</strong></p>
+    <p>Applying your CSS knowledge to real projects is a great way to solidify your skills and gain practical
+                    experience. Here are some aspects to consider while working on projects:</p>
+    <p><strong>Building Websites with Responsive Design:</strong></p>
+    <p>Creating responsive websites involves designing layouts that adapt to different screen sizes and devices.
+                    Use media queries and flexible units to achieve responsive design.</p>
+    <p>Example of Responsive Design:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >@media</span> (<span >max-width</span>: <span >768px</span>) {
+                        <span >.header</span> {
+                          <span >font-size</span>: <span >18px</span>;
+                        }
+                      }
+                      </code></div></div></pre>
+    <p><strong>Creating Interactive Elements with CSS:</strong></p>
+    <p>CSS can be used to add interactivity to elements. Hover effects, transitions, and animations can make
+                    your website more engaging.</p>
+    <p>Example of Hover Effect:</p>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.button</span> {
+                        <span >background-color</span>: blue;
+                        <span >color</span>: white;
+                        <span >padding</span>: <span >10px</span> <span >20px</span>;
+                        <span >border</span>: none;
+                        <span >transition</span>: background-color <span >0.3s</span>;
+                      }
+                      
+                      <span >.button</span><span >:hover</span> {
+                        <span >background-color</span>: darkblue;
+                      }
+                      </code></div></div></pre>
+    <p><strong>Project Example: Personal Portfolio Website</strong></p>
+    <p>Let's consider building a personal portfolio website using CSS:</p>
+    <ol>
+    <li><strong>Responsive Header:</strong>
+                        Create a header with your name and navigation links. Make the navigation collapse into a menu for
+                        smaller screens.</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >header</span> <span >class</span>=<span >"header"</span>&gt;</span>
+                        <span >&lt;<span >h1</span>&gt;</span>Your Name<span >&lt;/<span >h1</span>&gt;</span>
+                        <span >&lt;<span >nav</span> <span >class</span>=<span >"nav"</span>&gt;</span>
+                          <span >&lt;<span >a</span> <span >href</span>=<span >"#"</span>&gt;</span>Home<span >&lt;/<span >a</span>&gt;</span>
+                          <span >&lt;<span >a</span> <span >href</span>=<span >"#"</span>&gt;</span>Portfolio<span >&lt;/<span >a</span>&gt;</span>
+                          <span >&lt;<span >a</span> <span >href</span>=<span >"#"</span>&gt;</span>Contact<span >&lt;/<span >a</span>&gt;</span>
+                        <span >&lt;/<span >nav</span>&gt;</span>
+                      <span >&lt;/<span >header</span>&gt;</span>
+                      </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.header</span> {
+                        <span >background-color</span>: <span >#333</span>;
+                        <span >color</span>: white;
+                        <span >padding</span>: <span >20px</span>;
+                        <span >text-align</span>: center;
+                      }
+                      
+                      <span >.nav</span> {
+                        <span >display</span>: flex;
+                        <span >justify-content</span>: center;
+                      }
+                      
+                      <span >@media</span> (<span >max-width</span>: <span >768px</span>) {
+                        <span >.nav</span> {
+                          <span >flex-direction</span>: column;
+                        }
+                      }
+                      </code></div></div></pre>
+    <ol start="2">
+    <li><strong>Portfolio Showcase:</strong>
+                        Create a section to showcase your projects using a grid layout. Apply hover effects to project
+                        items.</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >section</span> <span >class</span>=<span >"portfolio"</span>&gt;</span>
+                        <span >&lt;<span >div</span> <span >class</span>=<span >"project"</span>&gt;</span>
+                          <span >&lt;<span >img</span> <span >src</span>=<span >"project1.jpg"</span> <span >alt</span>=<span >"Project 1"</span>&gt;</span>
+                          <span >&lt;<span >h3</span>&gt;</span>Project 1<span >&lt;/<span >h3</span>&gt;</span>
+                        <span >&lt;/<span >div</span>&gt;</span>
+                        <span >&lt;!-- More project items --&gt;</span>
+                      <span >&lt;/<span >section</span>&gt;</span>
+                      </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.portfolio</span> {
+                        <span >display</span>: grid;
+                        <span >grid-template-columns</span>: <span >repeat</span>(auto-fit, <span >minmax</span>(<span >300px</span>, <span >1</span>fr));
+                        <span >gap</span>: <span >20px</span>;
+                      }
+                      
+                      <span >.project</span> {
+                        <span >border</span>: <span >1px</span> solid <span >#ddd</span>;
+                        <span >padding</span>: <span >20px</span>;
+                        <span >transition</span>: transform <span >0.3s</span>;
+                      }
+                      
+                      <span >.project</span><span >:hover</span> {
+                        <span >transform</span>: <span >scale</span>(<span >1.05</span>);
+                      }
+                      </code></div></div></pre>
+    <ol start="3">
+    <li><strong>Contact Form:</strong>
+                        Create a contact form with input fields and a submit button. Apply styling to form elements.</li>
+    </ol>
+    <pre class="preview"><div ><div ><span>html</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >&lt;<span >form</span> <span >class</span>=<span >"contact-form"</span>&gt;</span>
+                        <span >&lt;<span >input</span> <span >type</span>=<span >"text"</span> <span >placeholder</span>=<span >"Name"</span>&gt;</span>
+                        <span >&lt;<span >input</span> <span >type</span>=<span >"email"</span> <span >placeholder</span>=<span >"Email"</span>&gt;</span>
+                        <span >&lt;<span >textarea</span> <span >placeholder</span>=<span >"Message"</span>&gt;</span><span >&lt;/<span >textarea</span>&gt;</span>
+                        <span >&lt;<span >button</span> <span >type</span>=<span >"submit"</span>&gt;</span>Send<span >&lt;/<span >button</span>&gt;</span>
+                      <span >&lt;/<span >form</span>&gt;</span>
+                      </code></div></div></pre>
+    <pre class="preview"><div ><div ><span>css</span><button ><svg  fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect height="4" rx="1" ry="1" width="8" x="8" y="2"></rect></svg>Copy code</button></div><div ><code ><span >.contact-form</span> {
+                        <span >max-width</span>: <span >400px</span>;
+                        <span >margin</span>: <span >0</span> auto;
+                      }
+                      
+                      <span >.contact-form</span> <span >input</span>,
+                      <span >.contact-form</span> <span >textarea</span>,
+                      <span >.contact-form</span> <span >button</span> {
+                        <span >width</span>: <span >100%</span>;
+                        <span >padding</span>: <span >10px</span>;
+                        <span >margin-bottom</span>: <span >10px</span>;
+                        <span >border</span>: <span >1px</span> solid <span >#ddd</span>;
+                      }
+                      </code></div></div></pre>
+    <p>By working on projects like a personal portfolio website, you can apply your CSS skills to real-world
+                    scenarios, experiment with responsive design, and create engaging user experiences. As you complete
+                    projects, you'll gain a deeper understanding of how CSS contributes to the overall look and
+                    functionality of websites.</p>
+    </div>
+
+    <script src="learncss.js"></script>
+
+
+  </div>
+  
+</body>
+</html>
