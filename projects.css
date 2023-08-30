@@ -1,4 +1,4 @@
-.coursesmaincontainer {
+.projectsmain {
     display: inline-block;
 }
 
@@ -25,5 +25,3 @@
 .card:hover {
     transform: scale(1.05);
 }
-
-
