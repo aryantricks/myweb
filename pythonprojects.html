@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aryantricks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pythonprojects.css">
+</head>
+<header>
+    <div class="logo_container">
+        <img src="img/my_logo.jpg" class="my_logo" alt="">
+        <h1 class="logo_txt">aryantricks</h1>
+    </div>
+</header>
+
+<body>
+    <script src="script.js"></script>
+    <div class="menucontainer">
+
+
+        <div class="menu" id="landedpage">
+            <a href="index.html" class="text">HOME</a>
+        </div>
+
+        <div class="menu">
+            <a href="courses.html" class="text">COURSES</a>
+        </div>
+
+        <div class="menu">
+            <a href="projects.html" class="text">PROJECTS</a>
+        </div>
+
+        <div class="menu">
+            <a href="" class="text">ABOUT</a>
+        </div>
+
+        <div class="menu">
+            <a href="" class="text">CONTACT</a>
+        </div>
+
+        <div class="menu">
+            <a href="" class="text">SUPPORT</a>
+        </div>
+
+        <div class="menu">
+            <a href="" class="text">CHAT</a>
+        </div>
+
+    </div>
+
+    <div class="pythonproject">
+        <div class="individualprojectcontainer"></div>
+        <video src="pythonprojects/analogueclock.mp4" type="video/mp4" controls></video>
+        <div>
+            <pre class="maincode">
+                <h2 style="text-align: center;position: sticky;top: 0;background-color: rgb(239, 233, 233);">PYTHON</h2>
+                <button class="copycode" id="copyButton">Copy Code</button>
+                <code id="codeBlock">
+    from tkinter import *
+    from math import *
+    from time import *
+    
+    
+    root = Tk()
+    canvas = Canvas(root, width=600, height=600, bg='grey')
+    canvas.pack()
+    
+    img=PhotoImage(file=r"d://image.png")
+    canvas.create_image(0, 0, anchor=NW, image=img)
+    
+    def draw_line(x1, y1, x2, y2, width, color, tag):
+        canvas.create_line(x1, y1, x2, y2, width=width, fill=color, tags=tag)
+    
+    def draw_text():
+        for i in range(1, 13):
+            angle = i / 12 * 360
+            x = 300 + 250 * sin(radians(angle))
+            y = 300 - 250 * cos(radians(angle))
+            canvas.create_text(x, y, text=str(i), font=('Ink Free', 40), fill="blue")
+    
+    def update_clock():
+        global s1, c1, s2, c2, m1, n1, m2, n2, h1, r1, h2, r2
+        canvas.delete("line_s", "line_m", "line_h")
+        
+        time = localtime()
+        sec = time.tm_sec
+        min = time.tm_min
+        hour1 = time.tm_hour % 12
+        hour2 = float(time.tm_min)/60
+        hour=hour1+hour2
+        
+        draw_line(300, 300, 300 + 120 * sin(radians(6 * sec)), 300 - 120 * cos(radians(6 * sec)), 3, "red", "line_s")
+        draw_line(300, 300, 300 + 100 * sin(radians(6 * min)), 300 - 100 * cos(radians(6 * min)), 5, "blue", "line_m")
+        draw_line(300, 300, 300 + 80 * sin(radians(30 * hour)), 300 - 80 * cos(radians(30 * hour)), 6, "blue", "line_h")
+    
+        canvas.after(1000, update_clock)
+    
+    draw_text()
+    update_clock()
+    
+    root.mainloop()
+    
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <script src="pythonprojects.js"></script>
+    </body>
